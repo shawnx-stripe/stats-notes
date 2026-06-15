@@ -285,7 +285,7 @@ res = sm.OLS(y, X).fit(cov_type='cluster', cov_kwds={'groups': g})  # Clustered
 
 ---
 
-Related notes to create:
+## Related notes
 - [[heteroskedasticity-robust standard errors]]
 - [[Newey–West|HAC standard errors]]
 - [[CR2 and CR3 corrections]]

@@ -205,7 +205,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[identification region]]
 - [[transportability]]
 - [[external validity]]

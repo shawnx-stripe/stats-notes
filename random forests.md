@@ -296,7 +296,7 @@ rf_ranger <- ranger(
 
 ---
 
-Related notes to create:
+## Related notes
 - [[decision trees]]
 - [[bootstrap]]
 - [[bagging]]

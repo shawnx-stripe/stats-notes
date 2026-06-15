@@ -204,7 +204,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Difference-in-Differences (DiD)]]
 - [[staggered adoption]]
 - [[group-time average treatment effect]]

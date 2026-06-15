@@ -191,7 +191,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Treatment-on-the-Treated (TOT)]]
 - [[Average Treatment Effect (ATE)]]
 - [[Local Average Treatment Effect (LATE)|Local Average Treatment Effect (LATE)]]

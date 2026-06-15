@@ -148,7 +148,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Instrumental Variables (IV)]]
 - [[Local Average Treatment Effect (LATE)|LATE]]
 - [[Intent-to-Treat (ITT)]]

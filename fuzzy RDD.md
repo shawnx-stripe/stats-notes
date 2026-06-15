@@ -317,7 +317,7 @@ rddensity running_var, c(0)
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Regression Discontinuity Design (RDD)|regression discontinuity design]]
 - [[sharp RDD]]
 - [[Instrumental Variables (IV)|instrumental variables]]

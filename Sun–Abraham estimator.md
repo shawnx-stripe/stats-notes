@@ -165,7 +165,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Difference-in-Differences (DiD)]]
 - [[two-way fixed effects]]
 - [[staggered adoption]]

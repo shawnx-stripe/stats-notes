@@ -179,7 +179,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Intent-to-Treat (ITT)]]
 - [[noncompliance]]
 - [[Local Average Treatment Effect (LATE)|LATE]]

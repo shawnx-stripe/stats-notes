@@ -182,7 +182,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Average Treatment Effect on the Treated (ATT)]]
 - [[Local Average Treatment Effect (LATE)|Local Average Treatment Effect (LATE)]]
 - [[Intent-to-Treat (ITT)]]

@@ -167,7 +167,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Difference-in-Differences (DiD)]]
 - [[Callaway–Sant’Anna estimator]]
 - [[Sun–Abraham estimator]]

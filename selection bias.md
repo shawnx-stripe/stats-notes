@@ -182,7 +182,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Unconfoundedness]]
 - [[Stable Unit Treatment Value Assumption (SUTVA)|SUTVA]]
 - [[Overlap]]

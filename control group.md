@@ -113,7 +113,7 @@ df["w"] = np.where(df["D"]==1, 1.0, ps/(1-ps))
 
 ---
 
-Related notes to create:
+## Related notes
 - [[treated group]]
 - [[quasi-experimental design]]
 - [[Difference-in-Differences (DiD)]]

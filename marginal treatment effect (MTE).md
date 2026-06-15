@@ -256,7 +256,7 @@ plt.show()
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Average Treatment Effect (ATE)|ATE]]
 - [[Average Treatment Effect on the Treated (ATT)|ATT]]
 - [[Average Treatment Effect on the Untreated (ATU)|ATU]]

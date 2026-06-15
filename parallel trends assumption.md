@@ -133,7 +133,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Difference-in-Differences (DiD)]]
 - [[DiD estimator]]
 - [[treated group]]

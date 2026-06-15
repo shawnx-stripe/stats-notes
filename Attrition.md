@@ -193,7 +193,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[selection bias]]
 - [[Lee bounds]]
 - [[Inverse Probability Weighting (IPW)|IPW]]

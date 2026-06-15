@@ -162,7 +162,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[treated group]]
 - [[control group]]
 - [[noncompliance]]

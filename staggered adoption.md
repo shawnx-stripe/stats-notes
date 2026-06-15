@@ -221,7 +221,7 @@ with explicit weights $w_g(k)$ reported (e.g., cohort sizes).
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Difference-in-Differences (DiD)]]
 - [[DiD estimator]]
 - [[two-way fixed effects]]

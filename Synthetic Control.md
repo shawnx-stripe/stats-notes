@@ -233,7 +233,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Difference-in-Differences (DiD)]]
 - [[event study]]
 - [[parallel trends assumption]]

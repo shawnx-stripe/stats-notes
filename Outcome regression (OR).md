@@ -193,7 +193,7 @@ ATT_or = (treated['Y'] - m0_hat[df.W==1]).mean()
 
 ---
 
-Related notes to create:
+## Related notes
 - [[g-formula]]
 - [[dose–response function]]
 - [[calibration plot]]

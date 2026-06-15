@@ -197,7 +197,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[propensity score]]
 - [[matching]]
 - [[Inverse Probability Weighting (IPW)|IPW]]

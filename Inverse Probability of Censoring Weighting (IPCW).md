@@ -235,7 +235,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Attrition]]
 - [[selection bias]]
 - [[Inverse Probability Weighting (IPW)|IPW]]

@@ -258,7 +258,7 @@ print(f"Lee bounds (ATT): LB={LB:.4f}, UB={UB:.4f}")
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Average Treatment Effect on the Treated (ATT)]]
 - [[composition]]
 - [[entropy balancing]]

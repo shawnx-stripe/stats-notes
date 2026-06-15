@@ -175,7 +175,7 @@ interpretable as a weighted average of local effects.
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Instrumental Variables (IV)]]
 - [[Intent-to-Treat (ITT)]]
 - [[Treatment-on-the-Treated (TOT)]]

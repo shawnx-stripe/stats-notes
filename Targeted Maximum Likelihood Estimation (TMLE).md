@@ -203,7 +203,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Average Treatment Effect (ATE)]]
 - [[Average Treatment Effect on the Treated (ATT)]]
 - [[Augmented Inverse Probability Weighting (AIPW)|AIPW]]

@@ -236,7 +236,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Unconfoundedness]]
 - [[Overlap]]
 - [[matching]]

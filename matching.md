@@ -194,7 +194,7 @@ print(att)
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Unconfoundedness]]
 - [[Overlap]]
 - [[Stable Unit Treatment Value Assumption (SUTVA)|SUTVA]]

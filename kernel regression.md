@@ -124,23 +124,6 @@ Near boundaries: increased bias, slower convergence. Solutions: boundary kernels
 > - **Discrete predictors**: Need special kernels or methods
 > - **Heteroskedasticity**: Consider weighted kernel regression
 
-## Copy-ready formulas
-
-- Nadaraya-Watson:
-$$
-\hat{m}(x) = \frac{\sum_{i=1}^n K_h(x - X_i) Y_i}{\sum_{i=1}^n K_h(x - X_i)}
-$$
-
-- Gaussian kernel:
-$$
-K_h(u) = \frac{1}{h\sqrt{2\pi}} \exp\left(-\frac{u^2}{2h^2}\right)
-$$
-
-- MSE decomposition:
-$$
-\text{MSE}(x) = \frac{h^4}{4}[m''(x)]^2 \mu_2^2 + \frac{\sigma^2(x)R(K)}{nhf(x)}
-$$
-
 ## Minimal code snippets
 
 ```python
@@ -168,7 +151,7 @@ npregress kernel Y X, kernel(gaussian)
 
 ---
 
-Related notes to create:
+## Related notes
 - [[local linear regression]]
 - [[local polynomial regression]]
 - [[bandwidth selection]]

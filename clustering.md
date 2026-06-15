@@ -148,7 +148,7 @@ with $\bar n$ average cluster size and $\rho$ intra-cluster correlation.
 
 ---
 
-Related notes to create:
+## Related notes
 - [[clustered standard errors]]
 - [[few-cluster corrections]]
 - [[wild cluster bootstrap]]

@@ -102,25 +102,6 @@ Other considerations:
 
 - Policy evaluations (minimum wage laws, tax changes, training programs) when randomized experiments are infeasible but you have treated and comparable controls over time.
 
-## Copy-ready formulas
-
-- DiD contrast:
-$$
-\text{DiD} = (\bar{Y}_T^{\text{post}} - \bar{Y}_T^{\text{pre}}) - (\bar{Y}_C^{\text{post}} - \bar{Y}_C^{\text{pre}})
-$$
-
-- Regression:
-$$
-Y_{it} = \alpha_i + \gamma_t + \beta \,(D_i \cdot Post_t) + \varepsilon_{it}
-$$
-
-## Obsidian rendering tips
-
-- Use block math with `$$ ... $$` and inline math with `$ ... $`.
-- Avoid LaTeX spacing commands like `\;`, `\:`, `\quad` if they render as punctuation in your setup.
-- Ensure math rendering is enabled: Settings → Editor → Show math syntax.
-- If symbols look odd, toggle your MathJax version (some builds support v3 better).
-
 ## Minimal code snippets (optional)
 
 ```r
@@ -148,7 +129,7 @@ print(res)
 
 ---
 
-Related notes to create:
+## Related notes
 - [[quasi-experimental design]]
 - [[treated group]]
 - [[control group]]

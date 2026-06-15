@@ -163,7 +163,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[treatment effect heterogeneity|CATE]]
 - [[quantile treatment effects]]
 - [[best linear predictor]]

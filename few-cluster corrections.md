@@ -186,7 +186,7 @@ where t* are bootstrap statistics under random cluster weights.
 
 ---
 
-Related notes to create:
+## Related notes
 - [[clustered standard errors]]
 - [[Difference-in-Differences (DiD)]]
 - [[two-way fixed effects]]

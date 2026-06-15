@@ -79,7 +79,7 @@ df["DPost"] = df["Post"] * df["TreatedEver"]
 
 ---
 
-Related notes to create:
+## Related notes
 - [[control group]]
 - [[quasi-experimental design]]
 - [[Difference-in-Differences (DiD)]]

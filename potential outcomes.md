@@ -131,32 +131,6 @@ $$
 - Observational with estimated $\hat{e}(X)$:
   - Compute IPW ATE using the formula above; compare to outcome regression; check balance.
 
-## Copy-ready formulas
-
-- Observed outcome:
-$$
-Y = W Y(1) + (1-W) Y(0)
-$$
-- ATE, ATT, ATC:
-$$
-\text{ATE} = \mathbb{E}[Y(1)-Y(0)], \quad \text{ATT} = \mathbb{E}[Y(1)-Y(0)\mid W=1], \quad \text{ATC} = \mathbb{E}[Y(1)-Y(0)\mid W=0]
-$$
-- G-formula:
-$$
-\mathbb{E}[Y(w)] = \mathbb{E}\big[\mathbb{E}[Y \mid W=w, X]\big]
-$$
-- Propensity score:
-$$
-e(X) = P(W=1 \mid X)
-$$
-- IPW and AIPW (doubly robust) estimators as above.
-
-## Obsidian rendering tips
-
-- Use block math with `$$ ... $$` and inline math with `$ ... $`.
-- Avoid LaTeX spacing commands that may render oddly.
-- Enable math rendering in settings; switch MathJax versions if symbols look off.
-
 ## Minimal code snippets (optional)
 
 ```r
@@ -203,7 +177,7 @@ ate
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Stable Unit Treatment Value Assumption (SUTVA)|SUTVA]]
 - [[consistency]]
 - [[interference]]

@@ -147,7 +147,7 @@ If $D_i(0)=0$ for all $i$ (no always-takers), then monotonicity holds and, under
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Instrumental Variables (IV)]]
 - [[Local Average Treatment Effect (LATE)|LATE]]
 - [[Intent-to-Treat (ITT)]]

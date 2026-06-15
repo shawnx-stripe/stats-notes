@@ -221,7 +221,7 @@ print(f"SEs understated by: {(mf-1)*100:.0f}%")
 
 ---
 
-Related notes to create:
+## Related notes
 - Brent Moulton
 - [[ICC|intraclass correlation]]
 - [[clustered standard errors]]

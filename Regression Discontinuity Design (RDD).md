@@ -201,7 +201,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[running variable]]
 - [[cutoff]]
 - [[fuzzy RDD]]

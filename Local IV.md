@@ -290,7 +290,7 @@ Notes:
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Wald estimator]]
 - [[Instrumental Variables (IV)|instrumental variables]]
 - [[marginal treatment effect (MTE)|MTE]]

@@ -158,32 +158,9 @@ summary(agg_simple); summary(agg_dynamic)
 eventstudyinteract Y G time, cohort(G) vce(cluster id) absorb(id time)
 ```
 
-## Copy-ready formulas
-
-- Simple DiD contrast:
-$$
-\text{DiD} = (\bar{Y}_T^{\text{post}} - \bar{Y}_T^{\text{pre}}) - (\bar{Y}_C^{\text{post}} - \bar{Y}_C^{\text{pre}})
-$$
-
-- TWFE regression:
-$$
-Y_{it} = \alpha_i + \gamma_t + \beta (D_i \cdot Post_t) + \varepsilon_{it}
-$$
-
-- Event-study (relative time):
-$$
-Y_{it} = \alpha_i + \gamma_t + \sum_{k \ne -1} \beta_k \, \mathbf{1}\{t - G_i = k\} + \varepsilon_{it}
-$$
-
-## Obsidian rendering tips
-
-- Use `$$ ... $$` for block math and `$ ... $` for inline.
-- Avoid LaTeX spacing commands like `\;` or `\quad` if they render as punctuation in your setup.
-- Ensure math rendering is enabled in Settings → Editor → Show math syntax.
-
 ---
 
-Related notes to create:
+## Related notes
 - [[Difference-in-Differences (DiD)]]
 - [[treated group]]
 - [[control group]]

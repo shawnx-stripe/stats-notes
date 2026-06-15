@@ -170,7 +170,7 @@ print(fs.summary)  # inspect coefficient on Z; compute F via statsmodels if need
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Instrumental Variables (IV)]]
 - [[exclusion restriction]]
 - [[monotonicity]]

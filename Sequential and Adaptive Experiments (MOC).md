@@ -209,7 +209,7 @@ Use only with group-seq/alpha-spending boundaries pre-specified.
 
 ---
 
-Related notes to create:
+## Related notes
 - [[alpha spending]]
 - [[O’Brien–Fleming boundary]]
 - [[Pocock boundary]]

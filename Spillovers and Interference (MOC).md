@@ -191,7 +191,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[exposure mapping]]
 - [[partial interference]]
 - [[network interference]]

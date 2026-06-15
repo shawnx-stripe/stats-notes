@@ -124,7 +124,7 @@ res = PanelOLS.from_formula('Y ~ 1 + D + Post + D:Post + Xpre1_t + Xpre2_t + Ent
 
 ---
 
-Related notes to create:
+## Related notes
 - [[covariates]]
 - [[post-treatment conditioning]]
 - [[collider bias]]

@@ -195,7 +195,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Augmented Inverse Probability Weighting (AIPW)|AIPW]]
 - [[Targeted Maximum Likelihood Estimation (TMLE)|TMLE]]
 - [[double machine learning]]

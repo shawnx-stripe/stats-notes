@@ -220,7 +220,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[propensity score]]
 - [[Unconfoundedness]]
 - [[Overlap]]

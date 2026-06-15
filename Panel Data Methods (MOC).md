@@ -218,7 +218,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[random effects]]
 - [[Hausman test]]
 - [[Mundlak adjustment]]

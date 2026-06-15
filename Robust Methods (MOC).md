@@ -183,7 +183,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[stabilized weights]]
 - [[weight trimming and caps]]
 - [[effective sample size]]

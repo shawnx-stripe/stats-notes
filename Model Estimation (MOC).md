@@ -225,7 +225,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[EM algorithm]]
 - [[BFGS]]
 - proximal gradient

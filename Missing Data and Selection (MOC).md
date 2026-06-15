@@ -178,7 +178,7 @@ graph TD
 
 ---
 
-Related notes to create:
+## Related notes
 - [[MCAR]]
 - [[MAR]]
 - [[FIML]]

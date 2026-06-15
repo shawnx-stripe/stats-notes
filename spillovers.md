@@ -163,7 +163,7 @@ $$
 
 ---
 
-Related notes to create:
+## Related notes
 - [[No spillovers]]
 - [[interference]]
 - [[Stable Unit Treatment Value Assumption (SUTVA)|SUTVA]]

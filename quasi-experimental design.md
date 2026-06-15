@@ -175,7 +175,7 @@ mod.fit(cov_type='clustered', cluster_entity=True)
 
 ---
 
-Related notes to create:
+## Related notes
 - [[Difference-in-Differences (DiD)]]
 - [[Interrupted Time Series (ITS)]]
 - [[Synthetic Control]]
