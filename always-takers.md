@@ -122,7 +122,7 @@ In a randomized encouragement design:
 
 ## Bounds on Treatment Effects for Always-Takers
 
-Without additional assumptions, the treatment effect for always-takers is **not identified**. However, under further assumptions (e.g., [[monotone treatment response]]), we can derive bounds:
+Without additional assumptions, the treatment effect for always-takers is **not identified**. However, under further assumptions (e.g., [[MTR]], monotone treatment response), we can derive bounds:
 
 $$
 E[Y_i(0) \mid \text{always-taker}] \leq E[Y_i \mid Z=0, D=1]
@@ -135,7 +135,7 @@ This provides a **lower bound** on $Y_i(0)$ for always-takers under the assumpti
 
 ## Relation to Monotonicity
 
-[[Monotonicity]] assumes $D_i(1) \geq D_i(0)$ for all $i$, ruling out [[defiers]]. This allows us to partition the population into compliers, never-takers, and always-takers.
+[[monotonicity]] assumes $D_i(1) \geq D_i(0)$ for all $i$, ruling out [[defiers]]. This allows us to partition the population into compliers, never-takers, and always-takers.
 
 Without monotonicity:
 - We cannot separately identify $\pi_a$ and $\pi_d$ (the share of defiers)

@@ -226,7 +226,7 @@ If LATE varies by complier characteristics, the IV estimate is a **variance-weig
 
 ## Relation to Monotonicity
 
-[[Monotonicity]] states $D_i(1) \geq D_i(0)$ for all $i$, which rules out [[defiers]]. Without monotonicity:
+[[monotonicity]] states $D_i(1) \geq D_i(0)$ for all $i$, which rules out [[defiers]]. Without monotonicity:
 - The Wald estimand is $(π_c - π_d) \cdot \text{LATE}$, where $π_d$ is the share of defiers
 - If $π_c = π_d$, IV has no power (first stage = 0)
 - If $π_d > 0$, IV estimates a weighted effect of compliers and defiers (with opposite signs)

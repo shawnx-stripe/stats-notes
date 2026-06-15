@@ -144,7 +144,7 @@ Because never-takers self-select out of treatment, they likely differ from [[com
 
 Without additional assumptions, the treatment effect for never-takers is **not identified**. We observe $Y_i(0)$ for never-takers but never $Y_i(1)$.
 
-Under further assumptions (e.g., [[monotone treatment response]], mean dominance), we can derive **bounds**:
+Under further assumptions (e.g., [[MTR]], monotone treatment response, mean dominance), we can derive **bounds**:
 
 $$
 E[Y_i(1) \mid \text{never-taker}] \geq E[Y_i(0) \mid \text{never-taker}]
@@ -157,7 +157,7 @@ $$
 
 ## Relation to Monotonicity
 
-[[Monotonicity]] assumes $D_i(1) \geq D_i(0)$ for all $i$, ruling out [[defiers]]. This allows us to partition the population into compliers, never-takers, and always-takers.
+[[monotonicity]] assumes $D_i(1) \geq D_i(0)$ for all $i$, ruling out [[defiers]]. This allows us to partition the population into compliers, never-takers, and always-takers.
 
 Without monotonicity:
 - We cannot separately identify $\pi_n$ and $\pi_d$ (the share of defiers)
@@ -295,4 +295,4 @@ Understanding the share of never-takers is crucial for policy design:
 - [[Instrumental Variables (IV)]]
 - [[exclusion restriction]]
 - [[randomized controlled trial (RCT)]]
-- [[intent-to-treat (ITT)]]
+- [[Intent-to-Treat (ITT)]]

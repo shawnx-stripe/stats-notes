@@ -19,7 +19,7 @@ If you repeatedly test $H_0: \mu = 0$ as data accumulate and stop when $p < 0.05
 | Method | Approach |
 |--------|----------|
 | [[sequential testing]] | Use time-adjusted critical values (e.g., O'Brien–Fleming, Pocock) |
-| [[mSPRT]] | Mixture sequential probability ratio test with controlled type I error |
+| [[mixture SPRT]] | Mixture sequential probability ratio test with controlled type I error |
 | [[Always Valid Inference (AVI)]] | Confidence sequences valid at all stopping times |
 | Pre-commit to fixed $N$ | No peeking; single test at end |
 

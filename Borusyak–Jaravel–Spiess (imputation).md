@@ -81,6 +81,6 @@ event_plot, default_look
 ## Related notes
 
 - [[Difference-in-Differences (DiD)]] · [[two-way fixed effects]] · [[staggered adoption]]
-- [[Gardner DID2S]] · [[Callaway–Sant'Anna estimator]] · [[Sun–Abraham estimator]]
+- [[Gardner DID2S]] · [[Callaway–Sant’Anna estimator]] (Callaway-Sant'Anna) · [[Sun–Abraham estimator]]
 - [[Goodman–Bacon decomposition]] · [[event study]]
 - [[Causal Inference (MOC)]]

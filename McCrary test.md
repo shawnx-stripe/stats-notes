@@ -145,7 +145,7 @@ rddensity running_var, c(0) plot
 
 ```stata
 * Original McCrary test (requires external command)
-* Install: net install rddensity, from(https://raw.githubusercontent.com/rdpackages/rddensity/master/stata) replace
+* Install: ssc install rddensity, replace
 
 DCdensity running_var, breakpoint(0) generate(Xj Yj r0 fhat se_fhat)
 

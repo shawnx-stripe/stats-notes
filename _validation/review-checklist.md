@@ -24,12 +24,12 @@ Tracking issues found during the 2026-03-03 and 2026-04-02 vault reviews.
 
 - [x] **Causal Inference (MOC).md:214** — Self-referential link `[[Causal Inference (MOC)]]` in Related hubs; removed
 - [x] **Causal Inference (MOC).md** — `[[wild cluster bootstrap]] (placeholder)` labels removed (file exists)
-- [x] **Causal Inference (MOC).md** — `[[two-stage least squares (2SLS)]] (placeholder)` label removed (file exists)
+- [x] **Causal Inference (MOC).md** — `two-stage least squares (2SLS) (placeholder)` label removed (file exists)
 - [x] **Causal Inference (MOC).md** — `[[weak instruments]] (placeholder)` label removed (file exists)
 - [x] **Causal Inference (MOC).md** — `[[Conley standard errors]] (placeholder)` label removed (file exists)
 - [x] **Causal Inference (MOC).md** — `[[Moulton problem]] (placeholder)` label removed
 - [x] **Causal Inference (MOC).md:154** — `Anderson–Rubin (placeholder)` changed to proper wikilink `[[Anderson–Rubin]]`
-- [x] **Two-Stage Least Squares (2SLS).md** — Added alias `two-stage least squares (2SLS)` so `[[two-stage least squares (2SLS)]]` wikilinks resolve
+- [x] **Two-Stage Least Squares (2SLS).md** — Added alias `two-stage least squares (2SLS)` so that wikilink spelling resolves
 
 ## D. Stub Notes Created
 
@@ -62,7 +62,7 @@ Tracking issues found during the 2026-03-03 and 2026-04-02 vault reviews.
 These wikilinks appear in notes' `Related notes to create` sections and are intentional future stubs. They do not need immediate action and are excluded from the live-link audit:
 
 - Reading list entries: `[[Angrist and Pischke]]`, `[[Imbens and Rubin]]`, `[[Hernán and Robins]]`, `[[Cunningham (Mixtape)]]`
-- Bootstrap-related: `[[jackknife]]`, `[[permutation test]]`, `[[cross-validation]]`, `[[resampling methods]]`, `[[BCa bootstrap]]`, `[[block bootstrap]]`, etc.
-- 2SLS-related: `[[k-class estimator]]`, `[[JIVE]]`, `[[Cragg–Donald statistic]]`, `[[Sargan test]]`, `[[Hansen J test]]`, etc.
-- TWFE-related: `[[within transformation]]`, `[[demeaning]]`
+- Bootstrap-related: `jackknife`, `permutation test`, `cross-validation`, `resampling methods`, `BCa bootstrap`, `block bootstrap`, etc.
+- 2SLS-related: `k-class estimator`, `JIVE`, `Cragg-Donald statistic`, `Sargan test`, `Hansen J test`, etc.
+- TWFE-related: `within transformation`, `demeaning`
 - See `_validation/broken-links.md` for the full list.

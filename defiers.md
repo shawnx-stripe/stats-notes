@@ -8,7 +8,7 @@ updated: 2026-03-05
 # Defiers
 
 > [!summary]
-> Units who do the opposite of what the instrument encourages: $D_i(1)=0$ and $D_i(0)=1$. [[Monotonicity]] rules out defiers, enabling identification of [[Local Average Treatment Effect (LATE)|LATE]].
+> Units who do the opposite of what the instrument encourages: $D_i(1)=0$ and $D_i(0)=1$. [[monotonicity]] rules out defiers, enabling identification of [[Local Average Treatment Effect (LATE)|LATE]].
 
 ## Formal Definition
 
@@ -38,7 +38,7 @@ However, standard IV analysis **assumes defiers do not exist** via the [[monoton
 
 ## The Monotonicity Assumption
 
-[[Monotonicity]] states:
+[[monotonicity]] states:
 
 $$
 D_i(1) \geq D_i(0) \quad \text{for all } i

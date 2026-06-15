@@ -183,7 +183,7 @@ Related notes to create:
 - [[Shea’s partial R^2]]
 - [[Anderson–Rubin|Anderson–Rubin test]]
 - [[Stock–Yogo|Stock–Yogo critical values]]
-- [[Cragg–Donald]]
+- [[Cragg–Donald statistic]] (Cragg-Donald)
 - [[Limited Information Maximum Likelihood (LIML)|LIML]]
 - [[Fuller estimator]]
 - [[Jackknife IV (JIVE)]]

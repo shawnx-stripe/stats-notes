@@ -277,7 +277,7 @@ bws = rd.rx2('bws')
 - [[local linear regression]]
 - [[local polynomial regression]]
 - [[density test]]
-- [[McCrary density test]]
+- [[McCrary test]] (McCrary density test)
 - [[fuzzy RDD]]
 
 ---

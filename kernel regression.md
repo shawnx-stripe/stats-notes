@@ -109,7 +109,7 @@ Near boundaries: increased bias, slower convergence. Solutions: boundary kernels
 
 ## Comparison with other methods
 
-| Method | Kernel Regression | [[splines|Splines]] | [[Local linear]] | [[LOESS]] | [[Gaussian process]] |
+| Method | Kernel Regression | [[splines|Splines]] | [[local linear regression]] | [[LOESS]] | [[Gaussian process]] |
 |--------|------------------|------------|-----------------|-----------|---------------------|
 | **Flexibility** | High | Medium | High | High | Very high |
 | **Boundary** | Poor | Good | Good | Good | Good |

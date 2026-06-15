@@ -98,10 +98,11 @@ tauhat <- predict(cf)$predictions
 
 # (Optional) Cross-fitting: split data, fit cf on folds, get out-of-fold tauhat
 
-# 2) Fit a shallow policy tree that maximizes uplift
-# policytree expects scores; we can pass tauhat directly (or DR scores gamma)
+# 2) Fit a shallow policy tree that maximizes binary-action rewards
+# policytree expects one reward column per action: control vs treat.
 depth <- 2
-pt <- policy_tree(X, tauhat, depth = depth, minbucket = 200)
+Gamma <- cbind(control = 0, treat = tauhat)
+pt <- policy_tree(X, Gamma, depth = depth, min.node.size = 200)
 print(pt)
 # Predict treatment decisions
 pi_hat <- predict(pt, X)
@@ -112,9 +113,12 @@ rf0 <- regression_forest(X[W==0,], Y[W==0])
 rf1 <- regression_forest(X[W==1,], Y[W==1])
 m0 <- predict(rf0, X)$predictions
 m1 <- predict(rf1, X)$predictions
-p  <- mean(W)  # if randomized 50/50; otherwise estimate e(X)
+p_treated <- mean(W)  # if randomized; otherwise estimate e(X)
+p_logged <- ifelse(W == 1, p_treated, 1 - p_treated)
+m_logged <- ifelse(W == 1, m1, m0)
+m_policy <- ifelse(pi_hat == 1, m1, m0)
 
-V_DR <- mean( ifelse(pi_hat==1, m1, m0) + ( (pi_hat==W)/p )*( Y - ifelse(W==1, m1, m0) ) )
+V_DR <- mean(m_policy + ((pi_hat == W) / p_logged) * (Y - m_logged))
 V_DR
 ```
 

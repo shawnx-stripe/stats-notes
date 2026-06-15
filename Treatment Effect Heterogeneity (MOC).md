@@ -165,7 +165,7 @@ $$
 
 Related notes to create:
 - [[treatment effect heterogeneity|CATE]]
-- [[Quantile treatment effects]]
+- [[quantile treatment effects]]
 - [[best linear predictor]]
 - [[GATES]]
 - [[meta-learners]]

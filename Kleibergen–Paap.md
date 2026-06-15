@@ -8,7 +8,7 @@ updated: 2026-03-05
 # Kleibergen–Paap
 
 > [!summary]
-> Generalization of the Cragg–Donald statistic for testing weak instruments that is robust to heteroskedasticity, autocorrelation, and clustering. The rk Wald F-statistic is compared to [[Stock–Yogo]] critical values.
+> Robust weak-instrument diagnostic for IV models under heteroskedasticity, autocorrelation, or clustering. The rk Wald F-statistic is often reported near Stock-Yogo references, but those critical values are homoskedastic Cragg-Donald benchmarks rather than exact KP cutoffs.
 
 ## rk Wald F-Statistic
 
@@ -18,10 +18,10 @@ $$
 
 where $P_X$ and $M_X$ are projection matrices, and variance matrices are robust to non-i.i.d. errors.
 
-Compare to Stock–Yogo critical values (e.g., 10 for 10% maximal IV relative bias).
+Do not treat Stock-Yogo critical values as strictly valid for robust KP statistics. They are useful homoskedastic Cragg-Donald references; for robust weak-IV diagnostics, prefer context-specific effective F guidance such as [[Montiel Olea–Pflueger F]] where available.
 
 > [!warning]
-> - **Rule of thumb**: $F_{\text{KP}} > 10$ suggests instruments are not weak (but threshold varies by context)
+> - **Rule of thumb**: $F_{\text{KP}} > 10$ is only a rough screen; threshold quality depends on the model and covariance structure
 > - **Clustering**: KP statistic is valid with clustered errors; standard first-stage F is not
 > - **Multiple endogenous regressors**: Use with caution; weak-IV diagnostics less clear-cut
 
@@ -37,6 +37,7 @@ estat firststage  // reports Kleibergen-Paap F
 
 - [[weak instruments]]
 - [[Stock–Yogo]]
+- [[Montiel Olea–Pflueger F]]
 - [[Two-Stage Least Squares (2SLS)|2SLS]]
 - [[Instrumental Variables (IV)]]
 - [[relevance]]

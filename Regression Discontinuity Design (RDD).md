@@ -211,7 +211,7 @@ Related notes to create:
 - triangular kernel
 - [[MSE-optimal bandwidth]]
 - [[Calonico-Cattaneo-Titiunik|Calonico–Cattaneo–Titiunik (CCT)]]
-- [[Imbens–Kalyanaraman (IK) bandwidth]]
+- [[Imbens-Kalyanaraman]] (IK bandwidth)
 - [[RD plot]]
 - [[covariate balance]]
 - [[manipulation test]]

@@ -113,10 +113,10 @@ Multiple methods with different properties:
 - Parameters on boundary of parameter space
 
 > [!warning] Bootstrap failures
-> Bootstrap is **inconsistent** for:
+> The ordinary nonparametric bootstrap can be **inconsistent** or unreliable for:
 > - Sample maximum/minimum
 > - Number of modes
-> - Some U-statistics
+> - Degenerate or nonregular U-statistics
 > - Some change-point problems
 
 ## Theoretical foundations
@@ -310,7 +310,7 @@ def block_bootstrap(data, block_length, n_boot=1000):
 
 ---
 
-Related notes to create:
+## Related notes
 - jackknife
 - [[randomization inference|permutation test]]
 - [[cross-validation]]

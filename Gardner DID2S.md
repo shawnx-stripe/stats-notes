@@ -82,6 +82,6 @@ did2s Y, first_stage(id time) second_stage(D) treatment(D) cluster(id)
 ## Related notes
 
 - [[Difference-in-Differences (DiD)]] · [[two-way fixed effects]] · [[staggered adoption]]
-- [[Borusyak–Jaravel–Spiess (imputation)]] · [[Callaway–Sant'Anna estimator]] · [[Sun–Abraham estimator]]
+- [[Borusyak–Jaravel–Spiess (imputation)]] · [[Callaway–Sant’Anna estimator]] (Callaway-Sant'Anna) · [[Sun–Abraham estimator]]
 - [[Goodman–Bacon decomposition]] · [[event study]]
 - [[Causal Inference (MOC)]]

@@ -16,10 +16,10 @@ For instrument $Z$ and treatment $D$:
 
 | Stratum | $D(0)$ | $D(1)$ | Description |
 |---------|--------|--------|-------------|
-| [[Compliers]] | 0 | 1 | Take treatment iff assigned |
-| [[Never-takers]] | 0 | 0 | Never take treatment |
+| [[compliers]] | 0 | 1 | Take treatment iff assigned |
+| [[never-takers]] | 0 | 0 | Never take treatment |
 | [[Always-takers]] | 1 | 1 | Always take treatment |
-| [[Defiers]] | 1 | 0 | Do opposite of assignment |
+| [[defiers]] | 1 | 0 | Do opposite of assignment |
 
 ## Identification
 

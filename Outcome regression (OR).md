@@ -1,7 +1,6 @@
 ---
 title: Outcome regression (OR)
 aliases:
-  - G-computation
   - Outcome modeling
   - Outcome regression estimator
   - G-formula (plug-in)

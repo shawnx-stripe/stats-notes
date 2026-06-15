@@ -131,8 +131,13 @@ library(did)
 att <- att_gt(yname="Y", tname="time", idname="id", gname="G",
               data=df, panel=TRUE, xformla=~ X1 + X2)
 dyn <- aggte(att, type="dynamic")     # event-time aggregation
-byZ  <- aggte(att, type="group", by="Z_bin")  # subgroup aggregation (if available)
-summary(dyn); summary(byZ)
+
+# Subgroup workflow: split on pre-treatment Z_bin and estimate separately.
+att_low <- att_gt(yname="Y", tname="time", idname="id", gname="G",
+                  data=subset(df, Z_bin=="low"), panel=TRUE, xformla=~ X1 + X2)
+att_high <- att_gt(yname="Y", tname="time", idname="id", gname="G",
+                   data=subset(df, Z_bin=="high"), panel=TRUE, xformla=~ X1 + X2)
+summary(dyn); summary(aggte(att_low, type="simple")); summary(aggte(att_high, type="simple"))
 ```
 
 > [!example] Python: CATE with EconML (unconfoundedness)

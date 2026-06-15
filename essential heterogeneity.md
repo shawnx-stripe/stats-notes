@@ -1,6 +1,6 @@
 ---
 title: Essential Heterogeneity
-aliases: [essential heterogeneity, selection on gains]
+aliases: [essential heterogeneity]
 tags: [causal-inference, treatment-effects, heterogeneity]
 updated: 2026-03-05
 ---

@@ -95,7 +95,7 @@ Modern refinement with improved statistical properties:
 - No binning—uses raw data directly
 - MSE-optimal bandwidth selection reduces researcher discretion
 - Better power in finite samples
-- Handles discrete running variables naturally
+- Provides tools for mass points and discreteness, but discrete running variables remain delicate; inference can be sensitive when support near the cutoff is sparse.
 - Provides both point estimates and inference
 
 **Limitations**:

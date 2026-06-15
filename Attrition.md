@@ -212,7 +212,7 @@ Related notes to create:
 - [[Treatment-on-the-Treated (TOT)]]
 - [[Instrumental Variables (IV)]]
 - [[exclusion restriction]]
-- [[Heckman selection]]
+- [[Heckman correction]] (Heckman selection)
 - [[truncation by death]]
 - [[placebo test]]
 - [[few-cluster corrections]]

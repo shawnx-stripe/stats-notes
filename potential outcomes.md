@@ -227,7 +227,7 @@ Related notes to create:
 - [[treatment effect heterogeneity|CATE]]
 - [[Average Treatment Effect (ATE)|ATE]]
 - [[Average Treatment Effect on the Treated (ATT)|ATT]]
-- [[ATC]]
+- [[Average Treatment Effect on the Untreated (ATU)]] (ATC)
 - [[Difference-in-Differences (DiD)|difference-in-differences]]
 - [[Regression Discontinuity Design (RDD)|regression discontinuity]]
 - [[causal DAGs|DAG]]

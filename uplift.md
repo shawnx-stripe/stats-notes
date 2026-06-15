@@ -69,14 +69,14 @@ updated: 2025-09-17
 - AUUC: Area Under the Uplift Curve; related to Qini (with different normalization).
 
 ### Policy value via Off-Policy Evaluation (OPE)
-- When propensities p_i are known/logged:
+- When action-specific logging propensities $p_i(a)=\Pr(D_i=a\mid X_i)$ are known/logged:
   - IPS:
   $$
-  \widehat{V}_{IPS}(\pi)=\frac{1}{N}\sum_i \frac{\mathbf{1}\{\pi(X_i)=D_i\}}{p_i}Y_i
+  \widehat{V}_{IPS}(\pi)=\frac{1}{N}\sum_i \frac{\mathbf{1}\{\pi(X_i)=D_i\}}{p_i(D_i)}Y_i
   $$
   - DR (recommended):
   $$
-  \widehat{V}_{DR}(\pi)=\frac{1}{N}\sum_i \left[m_{\pi(X_i)}(X_i)+\frac{\mathbf{1}\{\pi(X_i)=D_i\}}{p_i}\big(Y_i-m_{D_i}(X_i)\big)\right].
+  \widehat{V}_{DR}(\pi)=\frac{1}{N}\sum_i \left[m_{\pi(X_i)}(X_i)+\frac{\mathbf{1}\{\pi(X_i)=D_i\}}{p_i(D_i)}\big(Y_i-m_{D_i}(X_i)\big)\right].
   $$
 - Use bootstrap or IF-based CIs; cluster-aware if data are clustered.
 
@@ -141,7 +141,7 @@ from sklearn.linear_model import LogisticRegression
 X = df[['X1','X2','X3']].to_numpy()
 T = df['D'].to_numpy().astype(int)
 Y = df['Y'].to_numpy()
-p = df.get('propensity', pd.Series(np.full(len(Y), T.mean()))).to_numpy()
+e = df.get('propensity_treated', pd.Series(np.full(len(Y), T.mean()))).to_numpy()
 
 dr = DRLearner(model_propensity=LogisticRegression(max_iter=2000),
                model_regression=RandomForestRegressor(n_estimators=500, random_state=0))
@@ -165,7 +165,10 @@ from sklearn.model_selection import train_test_split
 idx0 = T==0; idx1 = T==1
 m0 = RandomForestRegressor().fit(X[idx0], Y[idx0]).predict(X)
 m1 = RandomForestRegressor().fit(X[idx1], Y[idx1]).predict(X)
-V_DR = np.mean((pi==1)*m1 + (pi==0)*m0 + ((pi==T)/p)*(Y - (T*m1 + (1-T)*m0)))
+p_logged = np.where(T == 1, e, 1 - e)
+m_logged = np.where(T == 1, m1, m0)
+m_policy = np.where(pi == 1, m1, m0)
+V_DR = np.mean(m_policy + (pi == T) / p_logged * (Y - m_logged))
 print("DR policy value:", V_DR)
 ```
 
@@ -184,7 +187,7 @@ uplift_score = model.predict_uplift(X)
 print("Qini AUC:", qini_auc_score(Y, uplift_score, T))
 ```
 
-> [!example] R: causal forest (grf) + policy tree
+> [!example] R: causal forest (grf) + binary policy tree
 
 ```r
 # install.packages(c("grf","policytree"))
@@ -194,8 +197,9 @@ X <- as.matrix(df[, c("X1","X2","X3")]); Y <- df$Y; W <- df$D
 cf <- causal_forest(X, Y, W)
 tauhat <- predict(cf)$predictions
 
-# Uplift-based policy tree (depth 2)
-pt <- policy_tree(X, tauhat, depth = 2, minbucket = 200)
+# Reward matrix columns are actions 0 and 1. Treat when estimated gain is positive.
+Gamma <- cbind(control = 0, treat = tauhat)
+pt <- policy_tree(X, Gamma, depth = 2, min.node.size = 200)
 print(pt)
 pi_hat <- predict(pt, X)
 ```
@@ -214,7 +218,7 @@ $$
 $$
 - Policy value (DR OPE):
 $$
-\widehat{V}_{DR}(\pi)=\frac{1}{N}\sum_i \left[m_{\pi(X_i)}(X_i)+\frac{\mathbf{1}\{\pi(X_i)=D_i\}}{p_i}(Y_i-m_{D_i}(X_i))\right].
+\widehat{V}_{DR}(\pi)=\frac{1}{N}\sum_i \left[m_{\pi(X_i)}(X_i)+\frac{\mathbf{1}\{\pi(X_i)=D_i\}}{p_i(D_i)}(Y_i-m_{D_i}(X_i))\right].
 $$
 
 ---

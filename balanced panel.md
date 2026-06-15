@@ -23,7 +23,7 @@ updated: 2026-03-05
 
 ## When unbalanced panels are problematic
 
-If missingness is related to unobserved outcomes ([[MNAR]]), estimates may be biased. Use:
+If missingness is related to unobserved outcomes ([[Missing Not At Random (MNAR)]], MNAR), estimates may be biased. Use:
 - [[Inverse Probability of Censoring Weighting (IPCW)|IPCW]] to reweight observed units
 - Selection models to jointly model missingness and outcomes
 - Check sensitivity to attrition assumptions

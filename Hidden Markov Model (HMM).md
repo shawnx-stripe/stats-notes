@@ -11,7 +11,7 @@ updated: 2025-09-21
 > A Hidden Markov Model (HMM) is a discrete-state state-space model where an unobserved Markov chain Z_t governs observations Y_t via state-dependent emission distributions. Core tasks: filtering p(z_t|y_{1:t}), smoothing p(z_t|y_{1:T}), decoding (most probable state sequence via Viterbi), prediction p(y_{t+1}|y_{1:t}), and parameter learning (Baum–Welch EM).
 
 - Parameters θ = {π, A, φ}: initial state π, transition matrix A, emission parameters φ.
-- Related: [[Sequential Monte Carlo (SMC)|SMC]] (online inference), [[Markov Chain Monte Carlo (MCMC)|MCMC]] for Bayesian HMMs, [[Maximum Likelihood Estimation (MLE)|MLE]] via EM, [[Kalman filter]] for the linear‑Gaussian continuous‑state special case, [[Time Series (MOC)]].
+- Related: [[Sequential Monte Carlo (SMC)|SMC]] (online inference), [[Markov Chain Monte Carlo (MCMC)|MCMC]] for Bayesian HMMs, [[Maximum Likelihood Estimation (MLE)|MLE]] via EM, and [[Kalman filter]] for the linear-Gaussian continuous-state state-space analog. Kalman filters are not a special case of finite-state HMMs; both are state-space models with different latent-state structures.
 
 ---
 
@@ -168,96 +168,21 @@ $$
 
 ---
 
-## Minimal forward–backward (pseudocode)
+## Minimal code snippets
 
 ```python
-def logsumexp(arr):
-    import math
-    m = max(arr)
-    s = sum(math.exp(a - m) for a in arr)
-    return m + math.log(s)
+from hmmlearn.hmm import GaussianHMM
 
-def hmm_forward_backward(y, pi, A, emission_logp):
-    """
-    Forward–backward with scaling.
-    Inputs:
-      - y: sequence of observations (only used by emission_logp)
-      - pi: length-K initial state probs
-      - A: KxK transition matrix
-      - emission_logp(t, k): returns log p(y_t | z_t=k)
-    Returns:
-      - loglik: log p(y_{1:T})
-      - gamma: T x K matrix with p(z_t=k | y_{1:T})
-      - xi: (T-1) x K x K with p(z_t=i, z_{t+1}=j | y_{1:T})
-    """
-    import math
+model = GaussianHMM(n_components=3, covariance_type="full", n_iter=200, random_state=1)
+model.fit(y.reshape(-1, 1))
 
-    T, K = len(y), len(pi)
-    log_alpha = [[-1e300]*K for _ in range(T)]
-    log_beta  = [[0.0]*K for _ in range(T)]
-    c = [0.0]*T
-    loglik = 0.0
-
-    # Forward (with scaling)
-    for k in range(K):
-        log_alpha[0][k] = math.log(pi[k]) + emission_logp(0, k)
-    c[0] = logsumexp(log_alpha[0])
-    log_alpha[0] = [la - c[0] for la in log_alpha[0]]
-    loglik += c[0]
-
-    for t in range(1, T):
-        for j in range(K):
-            terms = [log_alpha[t-1][i] + math.log(A[i][j]) for i in range(K)]
-            log_trans = logsumexp(terms)
-            log_alpha[t][j] = emission_logp(t, j) + log_trans
-        c[t] = logsumexp(log_alpha[t])
-        log_alpha[t] = [la - c[t] for la in log_alpha[t]]
-        loglik += c[t]
-
-    # Backward (scaled)
-    for k in range(K):
-        log_beta[T-1][k] = 0.0
-
-    for t in range(T-2, -1, -1):
-        for i in range(K):
-            terms = [
-                math.log(A[i][j]) + emission_logp(t+1, j) + log_beta[t+1][j] - c[t+1]
-                for j in range(K)
-            ]
-            log_beta[t][i] = logsumexp(terms)
-
-    # Gamma (state posteriors)
-    gamma = [[0.0]*K for _ in range(T)]
-    for t in range(T):
-        logs = [log_alpha[t][k] + log_beta[t][k] for k in range(K)]
-        z = logsumexp(logs)
-        gamma[t] = [math.exp(l - z) for l in logs]
-
-    # Xi (pairwise posteriors)
-    xi = [[[0.0]*K for _ in range(K)] for __ in range(T-1)]
-    for t in range(T-1):
-        log_xi_t = [
-            [
-                log_alpha[t][i]
-                + math.log(A[i][j])
-                + emission_logp(t+1, j)
-                + log_beta[t+1][j]
-                - c[t+1]
-                for j in range(K)
-            ]
-            for i in range(K)
-        ]
-        flat = [val for row in log_xi_t for val in row]
-        z = logsumexp(flat)
-        for i in range(K):
-            for j in range(K):
-                xi[t][i][j] = math.exp(log_xi_t[i][j] - z)
-
-    return loglik, gamma, xi
+loglik = model.score(y.reshape(-1, 1))          # log p(y_1:T)
+states = model.predict(y.reshape(-1, 1))        # Viterbi path
+posteriors = model.predict_proba(y.reshape(-1, 1))  # smoothed state probabilities
 ```
 
 > [!example] Viterbi (sketch)
-> Maintain δ_t(j) and backpointers ψ_t(j) as in the equations above, iterating t=2..T; backtrack from argmax δ_T.
+> Maintain δ_t(j) and backpointers ψ_t(j) as in the equations above, iterating t=2..T; backtrack from argmax δ_T. Use log-space or package implementations for real work.
 
 ---
 

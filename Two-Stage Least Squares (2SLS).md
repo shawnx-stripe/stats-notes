@@ -108,7 +108,7 @@ where Ŝ = Z' diag(ê^2) Z (or its clustered/spatial analog). Software will deli
 - With binary treatment and valid instruments:
   - Just-identified (one Z): 2SLS estimates [[Local Average Treatment Effect (LATE)|LATE]] for compliers.
   - Over-identified (multiple Z): 2SLS recovers a weighted average of instrument-specific LATEs, with weights proportional to each instrument’s covariance with treatment (Angrist–Imbens).
-- With continuous D or multiple endogenous regressors: interpret as linear projection parameter; causal interpretation requires stronger structure (e.g., [[Local IV]]/[[]] [[marginal treatment effect (MTE)]]).
+- With continuous D or multiple endogenous regressors: interpret as linear projection parameter; causal interpretation requires stronger structure (e.g., [[Local IV]] or [[marginal treatment effect (MTE)]]).
 
 ## Good practice
 
@@ -193,11 +193,12 @@ print(res.summary)
 
 ---
 
-Related notes to create:
+## Potential future notes
+
 - [[k-class estimator]]
 - [[Jackknife IV (JIVE)|JIVE]]
 - [[Cragg–Donald statistic]]
-- [[Kleibergen–Paap rk Wald F]]
+- [[Kleibergen–Paap]] rk Wald F
 - [[Sargan test]]
 - [[Hansen J test]]
 - [[Durbin–Wu–Hausman test]]

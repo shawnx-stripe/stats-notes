@@ -46,7 +46,7 @@ The decomposition is a **diagnostic**, not an estimator. Use it to:
 2. Check for negative weights
 3. Assess whether problematic comparisons (already-treated as controls) dominate
 
-If the decomposition reveals problematic weights, switch to a robust estimator: [[Callaway–Sant'Anna estimator]], [[Sun–Abraham estimator]], or [[Borusyak–Jaravel–Spiess (imputation)]].
+If the decomposition reveals problematic weights, switch to a robust estimator: [[Callaway–Sant’Anna estimator]] (Callaway-Sant'Anna), [[Sun–Abraham estimator]], or [[Borusyak–Jaravel–Spiess (imputation)]].
 
 ---
 
@@ -76,5 +76,5 @@ bacondecomp Y D, ddetail
 ## Related notes
 
 - [[Difference-in-Differences (DiD)]] · [[two-way fixed effects]] · [[staggered adoption]]
-- [[treatment effect heterogeneity]] · [[Callaway–Sant'Anna estimator]] · [[Sun–Abraham estimator]]
+- [[treatment effect heterogeneity]] · [[Callaway–Sant’Anna estimator]] · [[Sun–Abraham estimator]]
 - [[Causal Inference (MOC)]]

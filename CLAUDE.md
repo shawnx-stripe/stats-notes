@@ -6,7 +6,7 @@ and experimental design. Uses Obsidian with MOC (Map of Content) hub pages.
 
 ## Note Conventions
 - **Frontmatter**: Every note MUST have: title, aliases (list), tags (list), updated (YYYY-MM-DD)
-- **Structure**: # Title → > [!summary] → ## sections → ## Minimal code snippets → ## Related notes
+- **Structure**: # Title → > [!summary] → ## sections → optional ## Minimal code snippets → ## Related notes
 - **Filenames**:
   - Acronyms with known expansions: `Full Name (ABBR).md` in Title Case
     (e.g., `Inverse Probability Weighting (IPW).md`, `Ordinary Least Squares (OLS).md`).
@@ -17,11 +17,15 @@ and experimental design. Uses Obsidian with MOC (Map of Content) hub pages.
 - **Aliases**: Add all common abbreviations and alternative names
 - **Tags**: Use existing taxonomy: moc, experimentation, ab-testing, causal-inference,
   econometrics, panel-data, time-series, ml, variance-reduction, sequential, etc.
-- **Links**: Use `[[Note Name]]` wikilinks. Never include `.md` extension in links.
+- **Links**: Use Obsidian wikilinks, for example `Note Name` inside double
+  square brackets. Never include `.md` extension in links.
 - **Math**: Use `$$...$$` for display, `$...$` for inline. Standard LaTeX notation.
   Use `\operatorname{}` for named operators. Use `\text{}` for text in math.
-- **Code blocks**: Include R, Python, and/or Stata. Use real package function signatures.
-  Keep snippets minimal and copy-ready.
+- **Code blocks**: Include code only where it helps the note's purpose. Estimator,
+  test, software, and workflow pages should include copy-ready snippets with real
+  package function signatures. MOCs, pure concepts, assumptions, estimands, and
+  reading notes may omit code. Keep "minimal" code to 1-2 snippets and about 40
+  total lines unless the page is explicitly a workflow page.
 - **Callouts**: Use Obsidian callout syntax: `> [!summary]`, `> [!warning]`,
   `> [!tip]`, `> [!check]`, `> [!example]`, `> [!note]`
 
@@ -29,15 +33,22 @@ and experimental design. Uses Obsidian with MOC (Map of Content) hub pages.
 1. Check if the topic already exists (search filenames and aliases)
 2. Use the standard structure (frontmatter → summary → sections → code → related)
 3. Link FROM at least one MOC page
-4. Link TO related concepts using [[wikilinks]]
+4. Link TO related concepts using wikilinks
 5. Set `updated:` to today's date
 6. Add to the A-Z index of the appropriate MOC(s)
 
 ## When Reviewing Notes
 - Verify math formulas against canonical references
 - Check that code snippets are syntactically valid and use correct function signatures
-- Ensure all [[wikilinks]] resolve to existing files or are documented as planned stubs
+- Ensure all wikilinks resolve to existing files or are documented as planned stubs
 - Check that assumptions and diagnostics are complete for each method
+
+## Link Graph Expectations
+
+- Every content note should have at least one incoming link from a MOC or source note.
+- Every new or major concept should link back to its parent MOC and nearby concepts.
+- Use `## Related notes` only for existing linked notes.
+- Use `## Potential future notes` only for non-linked plain-text wishlist items.
 
 ## Tooling
 
