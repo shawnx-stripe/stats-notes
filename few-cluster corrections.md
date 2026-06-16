@@ -1,6 +1,6 @@
 ---
 title: Few-Cluster Corrections
-aliases: [small-sample clustering, small G corrections, CR2, CR3, CR2 and CR3 corrections]
+aliases: [small-sample clustering, small G corrections, CR2, CR3]
 tags: [econometrics, inference, variance-estimation, clustering, did, panels]
 updated: 2025-09-17
 ---

@@ -1,6 +1,6 @@
 ---
 title: ARIMA
-aliases: [ARIMA, ARMA, SARIMA, autoregressive integrated moving average, Box-Jenkins, seasonal differencing]
+aliases: [ARIMA, ARMA, SARIMA, autoregressive integrated moving average, Box-Jenkins]
 tags: [time-series, forecasting, econometrics]
 updated: 2026-03-05
 ---

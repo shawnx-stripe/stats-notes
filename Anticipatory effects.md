@@ -67,7 +67,7 @@ $$
 
 ### 5) Alternative designs / adjustments
 - [[Synthetic Control]] at the announcement date to track pre/post gaps.
-- [[Triple Differences (DDD)|DDD]]/[[triple differences]] to difference out a dimension unaffected by anticipation.
+- [[Triple Differences (DDD)|DDD]] to difference out a dimension unaffected by anticipation.
 - Model explicit exposure to information (e.g., media reach, proximity to HQ) and interact with time.
 
 ## Practical guidance
@@ -155,7 +155,6 @@ $$
 - [[event study]]
 - [[Synthetic Control]]
 - [[Triple Differences (DDD)|DDD]]
-- [[triple differences]]
 - [[Instrumental Variables (IV)]]
 - [[bad controls]]
 - [[policy endogeneity]]

@@ -266,7 +266,7 @@ Intersections: \[a1∩b1, a1∩b2, a2∩b1, a2∩b2] — all singletons.
 
 ---
 
-## See also
+## Related notes
 
 - [[clustered standard errors]] for one-way clustering foundations  
 - [[few-cluster corrections]] for small G  

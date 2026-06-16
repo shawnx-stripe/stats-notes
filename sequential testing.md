@@ -3,12 +3,7 @@ title: Sequential Testing
 aliases:
 - sequential analysis
 - group-sequential tests
-- alpha-spending
 - continuous monitoring
-- mSPRT
-- always-valid inference
-- Always Valid Inference (AVI)
-- AVI
 - Sequential Testing
 - Sequential testing
 tags:

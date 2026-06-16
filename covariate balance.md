@@ -1,6 +1,6 @@
 ---
 title: Covariate Balance
-aliases: [covariate balance, covariate balance test, balance diagnostics, balance check, standardized differences]
+aliases: [covariate balance, balance diagnostics, standardized differences]
 tags: [causal-inference, diagnostics]
 updated: 2026-03-05
 ---

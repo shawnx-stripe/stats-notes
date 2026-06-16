@@ -1,6 +1,6 @@
 ---
 title: Multiple Imputation
-aliases: [multiple imputation, MI, multiple imputation by chained equations, MICE, Rubin's rules]
+aliases: [multiple imputation, MI, multiple imputation by chained equations, MICE]
 tags: [missing-data, estimation]
 updated: 2026-03-05
 ---

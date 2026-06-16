@@ -147,6 +147,14 @@ Weighted samples:
 
 ---
 
+## Related notes
+
+- [[Bayesian Testing]]
+- [[Region of Practical Equivalence (ROPE)]]
+- [[Markov Chain Monte Carlo (MCMC)]]
+
+---
+
 ## References
 
 - Box & Tiao (1973). Bayesian Inference in Statistical Analysis.  

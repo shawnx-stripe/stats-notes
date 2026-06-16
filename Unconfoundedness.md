@@ -1,6 +1,6 @@
 ---
 title: Unconfoundedness
-aliases: [unconfoundedness, conditional independence assumption, CIA, selection on observables, conditional exchangeability, sequential unconfoundedness]
+aliases: [unconfoundedness, conditional independence assumption, CIA, selection on observables, conditional exchangeability]
 tags: [causal-inference, identification, observables, propensity-score, doubly-robust, dag]
 updated: 2025-09-17
 ---
@@ -202,7 +202,7 @@ $$
 - [[Instrumental Variables (IV)]]
 - [[exclusion restriction]]
 - [[Local Average Treatment Effect (LATE)|LATE]]
-- [[sequential unconfoundedness]]
+- [[sequential ignorability|sequential unconfoundedness]]
 - [[Marginal Structural Models (MSM)]]
 - [[Inverse Probability Weighting (IPW)|IPTW]]
 - [[LTMLE]]

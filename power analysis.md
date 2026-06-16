@@ -276,7 +276,7 @@ $$
 
 ---
 
-## Related notes to create or consult
+## Related notes
 
 - [[Experimental Design (MOC)]] · [[AB Testing (MOC)]]
 - [[Minimum Detectable Effect (MDE)|MDE]] · [[Analysis of Covariance (ANCOVA)|ANCOVA]] · [[stratification]] · [[randomized controlled trial (RCT)|cluster randomization]] · [[ICC]]

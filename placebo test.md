@@ -2,8 +2,6 @@
 title: Placebo Test
 aliases:
 - placebo
-- falsification test
-- falsification tests
 - in-space placebo
 - in-time placebo
 - negative control test

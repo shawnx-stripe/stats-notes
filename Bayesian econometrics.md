@@ -116,19 +116,19 @@ See also: [[Markov Chain Monte Carlo (MCMC)|MCMC]] for computation, [[Time Serie
 ## Practical patterns and pitfalls
 
 > [!check] Good practice
-> - [ ] Use weakly-informative priors; run prior predictive checks  
-> - [ ] Prefer HMC/NUTS when possible; reparameterize (non-centered); standardize predictors  
-> - [ ] Multiple chains, adequate warmup, diagnostics (R̂/ESS/divergences/trace)  
-> - [ ] PPC and predictive validation (LOO/WAIC); compare to baselines (ARIMA/ETS/OLS)  
-> - [ ] Sensitivity to priors and parameterizations; report robustness  
+> - [ ] Use weakly-informative priors; run prior predictive checks
+> - [ ] Prefer HMC/NUTS when possible; reparameterize (non-centered); standardize predictors
+> - [ ] Multiple chains, adequate warmup, diagnostics (R̂/ESS/divergences/trace)
+> - [ ] PPC and predictive validation (LOO/WAIC); compare to baselines (ARIMA/ETS/OLS)
+> - [ ] Sensitivity to priors and parameterizations; report robustness
 > - [ ] Reproducibility: seeds, versions, code, data schema
 
 > [!warning] Pitfalls
-> - Ignoring HMC divergences; relying on a single chain; posteriors stuck in a mode  
-> - Overly vague priors in high dimensions → pathologies/improper posteriors  
-> - Blind use of Bayes factors with improper priors; no sensitivity  
-> - Label switching in mixtures; non-identifiability in structural models  
-> - Using post-treatment features in causal models ([[leakage]])  
+> - Ignoring HMC divergences; relying on a single chain; posteriors stuck in a mode
+> - Overly vague priors in high dimensions → pathologies/improper posteriors
+> - Blind use of Bayes factors with improper priors; no sensitivity
+> - Label switching in mixtures; non-identifiability in structural models
+> - Using post-treatment features in causal models ([[leakage]])
 > - Confusing MCMC MCSE with sample-size power ([[power analysis]]/[[Minimum Detectable Effect (MDE)|MDE]] are design-time, not posterior MC error)
 
 ---
@@ -217,31 +217,31 @@ fit_did <- brm(
 ## Reporting essentials
 
 > [!check]
-> - [ ] Model and likelihood; hierarchical structure; priors (forms, scales, rationale)  
-> - [ ] Computation: sampler (HMC/NUTS/Gibbs/VI), chains, warmup, iterations, seeds; software and versions  
-> - [ ] Diagnostics: R̂, bulk/tail ESS, divergences/tree depth (HMC), traceplots, PPCs  
-> - [ ] Posterior summaries: means/medians, 50/95% credible intervals; posterior predictive intervals  
-> - [ ] Predictive comparison (LOO/WAIC); sensitivity to priors/parameterization  
+> - [ ] Model and likelihood; hierarchical structure; priors (forms, scales, rationale)
+> - [ ] Computation: sampler (HMC/NUTS/Gibbs/VI), chains, warmup, iterations, seeds; software and versions
+> - [ ] Diagnostics: R̂, bulk/tail ESS, divergences/tree depth (HMC), traceplots, PPCs
+> - [ ] Posterior summaries: means/medians, 50/95% credible intervals; posterior predictive intervals
+> - [ ] Predictive comparison (LOO/WAIC); sensitivity to priors/parameterization
 > - [ ] Reproducibility: code and data artifacts; registry links if [[pre-registration]] used
 
 ---
 
 ## Related notes
 
-- Foundations and computation: [[Markov Chain Monte Carlo (MCMC)|MCMC]] · [[Hypothesis testing]] (contrast)  
-- Time series: [[Time Series (MOC)]] · [[Prophet]] · BVAR (above) · state-space (placeholder) · [[seasonality]]  
-- Causal: [[Difference-in-Differences (DiD)]] · [[Regression Discontinuity Design (RDD)]] · [[Instrumental Variables (IV)]] · [[weak instruments]] · [[Synthetic Control]]  
-- Experimentation: [[AB Testing (MOC)]] · [[sequential testing]] · [[False Discovery Rate (FDR)|FDR]]/[[multiple testing control]] · [[Overall Evaluation Criterion (OEC)|OEC]] · [[guardrail metric]]  
+- Foundations and computation: [[Markov Chain Monte Carlo (MCMC)|MCMC]] · [[Hypothesis testing]] (contrast)
+- Time series: [[Time Series (MOC)]] · [[Prophet]] · BVAR (above) · state-space models · [[seasonality]]
+- Causal: [[Difference-in-Differences (DiD)]] · [[Regression Discontinuity Design (RDD)]] · [[Instrumental Variables (IV)]] · [[weak instruments]] · [[Synthetic Control]]
+- Experimentation: [[AB Testing (MOC)]] · [[sequential testing]] · [[False Discovery Rate (FDR)|FDR]]/[[multiple testing control]] · [[Overall Evaluation Criterion (OEC)|OEC]] · [[guardrail metric]]
 - Modeling hygiene: [[leakage]] · [[pre-registration]] · [[clustered standard errors]] · [[few-cluster corrections]]
 
 ---
 
 ## References and resources
 
-- Gelman, Carlin, Stern, Dunson, Vehtari, Rubin — Bayesian Data Analysis (BDA3)  
-- McElreath — Statistical Rethinking (applied Bayesian modeling)  
-- Stan, PyMC, NumPyro documentation; ArviZ and bayesplot for diagnostics  
-- Vehtari, Gelman, Gabry — Practical Bayesian model evaluation (LOO/WAIC, PPC)  
+- Gelman, Carlin, Stern, Dunson, Vehtari, Rubin — Bayesian Data Analysis (BDA3)
+- McElreath — Statistical Rethinking (applied Bayesian modeling)
+- Stan, PyMC, NumPyro documentation; ArviZ and bayesplot for diagnostics
+- Vehtari, Gelman, Gabry — Practical Bayesian model evaluation (LOO/WAIC, PPC)
 - Karlsson, Villani — Bayesian VARs; Primiceri — TVP-VAR; Kastner — SV priors
 
 ---

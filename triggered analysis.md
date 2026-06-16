@@ -198,7 +198,7 @@ coeftest(fit_ipcw, vcov = vcovHC(fit_ipcw, type="HC1"))
 
 ---
 
-## Relation to other pages
+## Related notes
 
 - [[AB Testing (MOC)]] · [[Experimental Design (MOC)]]
 - [[Overall Evaluation Criterion (OEC)|OEC]] · [[guardrail metric]]  

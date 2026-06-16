@@ -38,7 +38,7 @@ updated: 2025-09-17
   - Pre-specify strata (e.g., covariates, geos); randomize within strata
   - Analysis uses [[stratification]]/blocking factors; gains precision
 - Factorial and fractional factorial
-  - 2^k designs; main effects and interactions; split-plot constraints (placeholder)
+  - 2^k designs; main effects and interactions; [[split-plot|split-plot constraints]]
 - Saturation/network designs
   - [[randomized saturation design]] to estimate direct and spillover effects
   - Network/peer experiments; exposure mapping; partial interference
@@ -59,7 +59,7 @@ updated: 2025-09-17
   - Difference-in-means; [[Analysis of Covariance (ANCOVA)|ANCOVA]] with pre-treatment covariates/baselines for precision
   - Clustered designs: cluster-level means or unit-level with cluster-robust SEs
 - Variance reduction
-  - [[stratification]]/blocking; regression adjustment; CUPED/CUPAC (placeholders); re-randomization/optimal design (placeholder)
+  - [[stratification]]/blocking; regression adjustment; [[Controlled Experiments Using Pre-Experiment Data (CUPED)|CUPED]]/[[Controlled Experiments Using Pre-Experiment Covariates (CUPAC)|CUPAC]]; re-randomization/optimal design
 - Multiplicity
   - Family-wise error or [[False Discovery Rate (FDR)|FDR]]; pre-specify primary vs secondary outcomes
 - Sequential/peeking
@@ -87,7 +87,7 @@ See: [[No spillovers]] · [[interference]] · [[spillovers]]
 - Outputs
   - Minimum Detectable Effect (MDE) or required N/clusters
 - Tools
-  - Analytical formulas (CRD/cluster/block) (placeholder); simulation-based power; cluster-adjusted power
+  - Analytical formulas (CRD/cluster/block); simulation-based power; cluster-adjusted power
 - Design levers
   - Blocking, covariate adjustment (ANCOVA), increased cluster count (more critical than cluster size when ICC>0), longer duration
 
@@ -109,7 +109,7 @@ Links: [[power analysis]] · [[Minimum Detectable Effect (MDE)|MDE]]
 ## Diagnostics and monitoring
 
 - A/A tests and SRM
-  - A/A (placeholders) for pipeline sanity; [[Sample Ratio Mismatch (SRM)|SRM]] to detect allocation mismatches
+  - [[AA test|A/A tests]] for pipeline sanity; [[Sample Ratio Mismatch (SRM)|SRM]] to detect allocation mismatches
 - Balance checks
   - Covariate balance by arm/strata; exposure rates; missingness patterns
 - Event/time diagnostics
@@ -156,9 +156,9 @@ Links: [[power analysis]] · [[Minimum Detectable Effect (MDE)|MDE]]
 ## Variance reduction and precision
 
 - Covariate adjustment
-  - Baseline Y and key X in ANCOVA; pre-treatment means for CUPED (placeholder)
+  - Baseline Y and key X in ANCOVA; pre-treatment means for [[Controlled Experiments Using Pre-Experiment Data (CUPED)|CUPED]]
 - Design-side
-  - Blocking/stratification; re-randomization within tolerance (placeholder)
+  - Blocking/stratification; re-randomization within tolerance
 - Analysis-side
   - [[entropy balancing]] or regression weighting if random imbalances arise (use cautiously; preserve ITT)
 
@@ -167,7 +167,7 @@ Links: [[power analysis]] · [[Minimum Detectable Effect (MDE)|MDE]]
 ## Multiplicity and sequential testing
 
 - Families and control
-  - [[False Discovery Rate (FDR)|FDR]]; Holm/Bonferroni; Westfall–Young (placeholder)
+  - [[False Discovery Rate (FDR)|FDR]]; Holm/Bonferroni; Westfall-Young
 - Sequential/peeking
   - [[sequential testing]]: alpha-spending, Pocock/O’Brien–Fleming boundaries
 - Guardrails
@@ -177,7 +177,7 @@ Links: [[power analysis]] · [[Minimum Detectable Effect (MDE)|MDE]]
 
 ## Special topics
 
-- Crossover/washout; carryover effects (placeholder)
+- [[Crossover|Crossover/washout]]; carryover effects
 - Stepped-wedge analysis and relation to [[Difference-in-Differences (DiD)]] / [[staggered adoption]]
 - Geo-/market-level experiments: link with [[Synthetic Control]], [[event study]], clustered inference
 - Network experiments: design with partial interference; exposure mapping; saturation levels

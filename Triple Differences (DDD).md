@@ -1,6 +1,6 @@
 ---
 title: Triple Differences (DDD)
-aliases: [DDD, 3D DiD, diff-in-diff-in-diff]
+aliases: [DDD, 3D DiD, diff-in-diff-in-diff, triple differences, difference-in-difference-in-differences, triple diff]
 tags: [causal-inference, did, triple-differences, identification, panels, rc]
 updated: 2025-09-17
 ---

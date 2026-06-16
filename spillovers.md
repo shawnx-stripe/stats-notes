@@ -75,7 +75,7 @@ $$
 - Define $w_{ij}$ via distance decay, contiguity, or networks; report robustness to alternative $w$.
 
 ### 5) Robust comparisons
-- [[Triple Differences (DDD)|DDD]]/[[triple differences]] to difference out dimensions less affected by spillovers.
+- [[Triple Differences (DDD)|DDD]] to difference out dimensions less affected by spillovers.
 - Border-focused designs ([[boundary discontinuity]]) when treatment is assigned by geography.
 
 > [!warning] Inference vs. bias
@@ -172,7 +172,6 @@ $$
 - [[parallel trends assumption]]
 - [[Anticipatory effects]]
 - [[Triple Differences (DDD)|DDD]]
-- [[triple differences]]
 - [[boundary discontinuity]]
 - [[Synthetic Control]]
 - [[staggered adoption]]

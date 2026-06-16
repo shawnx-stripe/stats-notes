@@ -175,7 +175,7 @@ Links: [[power analysis]] · [[Minimum Detectable Effect (MDE)|MDE]]
 ## Special designs
 
 - Multi-armed and bandits
-  - Bandit algorithms (epsilon-greedy/Thompson) (placeholders); beware exploration bias and inference
+  - Bandit algorithms (epsilon-greedy/Thompson); beware exploration bias and inference
 - Marketplace/network experiments
   - Two-sided markets; shadow prices, pacing; interference-aware analysis
 - Holdouts and long-term tests

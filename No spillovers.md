@@ -77,7 +77,7 @@ where $w_{ij}$ captures proximity, network ties, or market overlap.
 
 ### 4) Robust DiD variants
 - Redefine treatment to incorporate exposure (e.g., high-exposure vs. low-exposure) and compare groups with similar exposure trends.
-- Use [[Triple Differences (DDD)|DDD]]/[[triple differences]] to difference out an additional dimension less affected by spillovers.
+- Use [[Triple Differences (DDD)|DDD]] to difference out an additional dimension less affected by spillovers.
 - In border settings, consider [[boundary discontinuity]] designs.
 
 ### 5) Inference adjustments
@@ -174,7 +174,6 @@ $$
 - [[treated group]]
 - [[control group]]
 - [[Triple Differences (DDD)|DDD]]
-- [[triple differences]]
 - [[boundary discontinuity]]
 - [[Synthetic Control]]
 - [[spatial buffers]]

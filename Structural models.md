@@ -17,8 +17,8 @@ updated: 2025-09-17
 ## When to use structural models (vs. reduced form)
 
 > [!tip] Use when
-> - You need counterfactuals (new taxes, prices, market design, policy rules) beyond observed “as‑is” shocks.  
-> - You want primitives (elasticities, risk aversion, switching costs, information frictions), or to aggregate to welfare.  
+> - You need counterfactuals (new taxes, prices, market design, policy rules) beyond observed “as‑is” shocks.
+> - You want primitives (elasticities, risk aversion, switching costs, information frictions), or to aggregate to welfare.
 > - Theory (optimization/equilibrium) meaningfully constrains behavior.
 
 > [!warning] Consider reduced‑form (e.g., [[Difference-in-Differences (DiD)]], [[Regression Discontinuity Design (RDD)]], [[Instrumental Variables (IV)]]) when identification can be achieved without full structural assumptions and counterfactual mapping is not primary.
@@ -109,11 +109,11 @@ updated: 2025-09-17
 ## Validation and diagnostics
 
 > [!check]
-> - [ ] In‑sample fit and micro‑moment matching; out‑of‑sample prediction (where meaningful)  
-> - [ ] Overidentifying restrictions (J‑test), IV strength (KP/MOP F for first stage)  
-> - [ ] Posterior predictive checks (Bayesian); sensitivity to [[priors]]  
-> - [ ] Model‑implied elasticities vs reduced‑form estimates (consistency)  
-> - [ ] Falsification tests (e.g., placebo implications, moments that should be zero)  
+> - [ ] In‑sample fit and micro‑moment matching; out‑of‑sample prediction (where meaningful)
+> - [ ] Overidentifying restrictions (J‑test), IV strength (KP/MOP F for first stage)
+> - [ ] Posterior predictive checks (Bayesian); sensitivity to [[priors]]
+> - [ ] Model‑implied elasticities vs reduced‑form estimates (consistency)
+> - [ ] Falsification tests (e.g., placebo implications, moments that should be zero)
 > - [ ] Computational robustness: alternative solvers, starting values, seeds
 
 ---
@@ -121,8 +121,8 @@ updated: 2025-09-17
 ## Counterfactuals and welfare
 
 - Procedure
-  1) Fix estimated parameters (with uncertainty); solve model under new policy/shocks  
-  2) Simulate equilibrium/behavior; compute outcomes and welfare measures  
+  1) Fix estimated parameters (with uncertainty); solve model under new policy/shocks
+  2) Simulate equilibrium/behavior; compute outcomes and welfare measures
   3) Propagate uncertainty via bootstrap or posterior draws; report intervals and sensitivity
 - Examples
   - Price/tax changes; merger simulations; reserve price rules; UI benefit rules; carbon policy; monetary rules in [[DSGE]].
@@ -134,19 +134,19 @@ updated: 2025-09-17
 ## Practical guidance
 
 > [!check] Workflow
-> - [ ] Write economic environment clearly (states, timing, equilibrium)  
-> - [ ] Map to observables; specify selection/measurement processes  
-> - [ ] Identify: list instruments/exclusions, moments, normalizations; discuss support  
-> - [ ] Choose estimator (MLE/GMM/SMM/II/Bayesian) and solver (NFXP/CCP/MPEC); set simulation design (draws, seeds)  
-> - [ ] Validate with auxiliary/reduced‑form evidence (DiD/RD/IV); cross‑check parameters/elasticities  
+> - [ ] Write economic environment clearly (states, timing, equilibrium)
+> - [ ] Map to observables; specify selection/measurement processes
+> - [ ] Identify: list instruments/exclusions, moments, normalizations; discuss support
+> - [ ] Choose estimator (MLE/GMM/SMM/II/Bayesian) and solver (NFXP/CCP/MPEC); set simulation design (draws, seeds)
+> - [ ] Validate with auxiliary/reduced‑form evidence (DiD/RD/IV); cross‑check parameters/elasticities
 > - [ ] Run counterfactuals with uncertainty and sensitivity (alternative moments/priors/functional forms)
 
 > [!warning] Pitfalls
-> - Weak instruments or poor support → fragile parameters; see [[weak instruments]]  
-> - Over‑parameterization without shrinkage; no regularization ([[regularization]])  
-> - Equilibrium selection issues; multiple equilibria ignored  
-> - Solvers stuck in local optima; unreported sensitivity to starting values  
-> - Mis‑specified error processes; ignoring serial correlation/[[Kalman filter|state-space/Kalman filter]] needs  
+> - Weak instruments or poor support → fragile parameters; see [[weak instruments]]
+> - Over‑parameterization without shrinkage; no regularization ([[regularization]])
+> - Equilibrium selection issues; multiple equilibria ignored
+> - Solvers stuck in local optima; unreported sensitivity to starting values
+> - Mis‑specified error processes; ignoring serial correlation/[[Kalman filter|state-space/Kalman filter]] needs
 > - Using post‑treatment information in moments (model‑based [[leakage]])
 
 ---
@@ -209,23 +209,23 @@ obj <- function(theta){
 
 ## Related notes
 
-- Estimation and inference: [[Maximum Likelihood Estimation (MLE)|MLE]] · [[Generalized Method of Moments (GMM)|GMM]] · [[Simulated method of moments]] · [[indirect inference]] · [[MPEC]] · [[EM algorithm|EM]] · [[regularization]]  
-- Identification and IV: [[Instrumental Variables (IV)]] · [[weak instruments]] · [[exclusion restriction]] · [[relevance]]  
-- Dynamic/IO/macro: dynamic discrete choice (placeholder) · [[Hotz–Miller CCP]] · NFXP (placeholder) · Auctions (placeholder) · BLP (placeholder) · [[DSGE]] · [[Kalman filter|state-space/Kalman filter]]  
-- Validation and robustness: [[Hypothesis testing]] · [[randomization inference]] · [[multiple testing control]] (for many moments) · [[leakage]]  
+- Estimation and inference: [[Maximum Likelihood Estimation (MLE)|MLE]] · [[Generalized Method of Moments (GMM)|GMM]] · [[Simulated method of moments]] · [[indirect inference]] · [[MPEC]] · [[EM algorithm|EM]] · [[regularization]]
+- Identification and IV: [[Instrumental Variables (IV)]] · [[weak instruments]] · [[exclusion restriction]] · [[relevance]]
+- Dynamic/IO/macro: dynamic discrete choice · [[Hotz–Miller CCP]] · NFXP · auctions · BLP · [[DSGE]] · [[Kalman filter|state-space/Kalman filter]]
+- Validation and robustness: [[Hypothesis testing]] · [[randomization inference]] · [[multiple testing control]] (for many moments) · [[leakage]]
 - Time series: [[Time Series (MOC)]]
 
 ---
 
 ## References (selected)
 
-- Rust (1987): Dynamic discrete choice/NFXP; Hotz & Miller (1993): CCP.  
-- Berry, Levinsohn, Pakes (1995): BLP demand; Nevo (2000): implementation.  
-- Pakes, Ostrovsky, Berry (2007): Indirect inference/BLP refinements.  
-- Gourieroux, Monfort, Renault (1993): Indirect inference.  
-- Keane & Wolpin; Aguirregabiria & Mira: dynamic discrete choice solutions.  
-- Ackerberg, Benkard, Berry, Pakes (2015): demand IO survey.  
-- Deaton & Muellbauer; Pakes & Pollard; Train: discrete choice/demand.  
-- Fernández-Villaverde et al.: Bayesian [[DSGE]].  
+- Rust (1987): Dynamic discrete choice/NFXP; Hotz & Miller (1993): CCP.
+- Berry, Levinsohn, Pakes (1995): BLP demand; Nevo (2000): implementation.
+- Pakes, Ostrovsky, Berry (2007): Indirect inference/BLP refinements.
+- Gourieroux, Monfort, Renault (1993): Indirect inference.
+- Keane & Wolpin; Aguirregabiria & Mira: dynamic discrete choice solutions.
+- Ackerberg, Benkard, Berry, Pakes (2015): demand IO survey.
+- Deaton & Muellbauer; Pakes & Pollard; Train: discrete choice/demand.
+- Fernández-Villaverde et al.: Bayesian [[DSGE]].
 
 ---

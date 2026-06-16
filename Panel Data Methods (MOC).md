@@ -56,7 +56,7 @@ $$
 - Random effects (RE) and hybrids:
   - RE assumes uncorrelated effects with regressors; Hausman test for FE vs RE
   - Mundlak adjustment includes unit means of X to relax RE; “within–between” models
-  - Related notes to create: [[random effects]], [[Hausman test]], [[Mundlak adjustment]], [[within–between model]]
+  - Related notes: [[random effects]], [[Hausman test]], [[Mundlak adjustment]], [[within–between model]]
 
 - Event study (leads/lags around treatment):
   - Dynamic path of treatment effects; pre-trend diagnostics
@@ -108,7 +108,7 @@ $$
 - Few clusters/time periods:
   - Use [[few-cluster corrections]] or [[wild cluster bootstrap]]
 - Cross-sectional/spatial dependence:
-  - Consider [[Conley standard errors]] (distance decay) or Driscoll–Kraay SEs (to create)
+  - Consider [[Conley standard errors]] (distance decay) or [[Driscoll–Kraay]] SEs
 - Moulton issue:
   - Group-level treatments with unit outcomes → underestimated SEs if ignoring clustering
   - See: [[Moulton problem]]
@@ -145,10 +145,10 @@ $$
 
 - Dynamic panels with lagged outcomes
   - Bias with short T (Nickell bias); use GMM (Arellano–Bond difference GMM; system GMM)
-  - Related notes to create: [[Arellano–Bond]], [[System GMM]], [[Nickell bias]]
+  - Related notes: [[Arellano–Bond]], [[System GMM]], [[Nickell bias]]
 - Interactive fixed effects / factor models
   - Allow latent common factors with heterogeneous loadings
-  - Related notes to create: [[interactive fixed effects]], common correlated effects
+  - Related notes: [[interactive fixed effects]]; future note: common correlated effects
 - High-dimensional FE and many-way FE
   - Efficient estimators and software (e.g., reghdfe); careful inference
 - Synthetic/augmented methods

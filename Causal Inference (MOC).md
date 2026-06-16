@@ -85,7 +85,7 @@ updated: 2025-09-17
   - [[propensity score]] · [[Inverse Probability Weighting (IPW)|IPW]] · [[Augmented Inverse Probability Weighting (AIPW)|AIPW]] · [[Targeted Maximum Likelihood Estimation (TMLE)|TMLE]] · [[Doubly Robust estimators]] · [[entropy balancing]] · [[stratification]] · [[matching]]
 - DiD-family
   - [[DiD estimator]] · [[two-way fixed effects]] · [[Callaway–Sant’Anna estimator]] · [[Sun–Abraham estimator]] · [[group-time average treatment effect]]
-  - Alternatives/aux: [[Borusyak–Jaravel–Spiess (imputation)]] · [[Gardner DID2S]] · [[Triple Differences (DDD)|DDD]] / [[triple differences]]
+  - Alternatives/aux: [[Borusyak–Jaravel–Spiess (imputation)]] · [[Gardner DID2S]] · [[Triple Differences (DDD)|DDD]]
 - Single/few treated units
   - [[Synthetic Control]] (and augmented/synth-DiD)
 - IV-family
@@ -238,4 +238,4 @@ updated: 2025-09-17
 ---
 
 > [!info] Status
-> This hub links to living notes. Pages marked “placeholder” are stubs to be filled as needed.
+> This hub links to living notes. Short stubs are expanded as they become active references.

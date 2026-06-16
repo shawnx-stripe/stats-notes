@@ -5,7 +5,6 @@ aliases:
 - SUTVA violation
 - network effects
 - peer effects
-- network interference
 - Interference
 tags:
 - causal-inference
@@ -111,7 +110,7 @@ $$
 - Threat: controls are indirectly treated, breaking [[parallel trends assumption]].
 - Remedies:
   - Redefine treatment to include exposure (high vs. low exposure groups).
-  - Use [[Triple Differences (DDD)|DDD]]/[[triple differences]] to difference out an additional dimension less affected by spillovers.
+  - Use [[Triple Differences (DDD)|DDD]] to difference out an additional dimension less affected by spillovers.
   - Consider [[Synthetic Control]] or boundary-discontinuity designs for treated aggregates.
 
 ## Reporting essentials
@@ -176,7 +175,6 @@ $$
 - [[DiD estimator]]
 - [[parallel trends assumption]]
 - [[Triple Differences (DDD)|DDD]]
-- [[triple differences]]
 - [[Synthetic Control]]
 - [[partial interference]]
 - [[randomized saturation design]]

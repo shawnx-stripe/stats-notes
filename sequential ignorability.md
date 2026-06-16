@@ -1,6 +1,6 @@
 ---
 title: Sequential Ignorability
-aliases: [sequential ignorability, sequential exchangeability]
+aliases: [sequential ignorability, sequential unconfoundedness, sequential exchangeability]
 tags: [causal-inference, longitudinal, assumptions]
 updated: 2026-03-05
 ---

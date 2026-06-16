@@ -85,7 +85,7 @@ $$
 
 - DiD:
   - Threats: policy info diffuses to controls; compositional shifts
-  - Tools: buffer zones, exposure-augmented DiD, [[Triple Differences (DDD)|DDD]]/[[triple differences]], robust [[event study]] leads for anticipation
+  - Tools: buffer zones, exposure-augmented DiD, [[Triple Differences (DDD)|DDD]], robust [[event study]] leads for anticipation
 
 - RDD:
   - Threats: manipulation (not a SUTVA issue per se), cross-unit spillovers around the cutoff, heterogeneous “treatment” at threshold
@@ -165,5 +165,4 @@ $$
 - [[exclusion restriction]]
 - [[Regression Discontinuity Design (RDD)]]
 - [[Triple Differences (DDD)|DDD]]
-- [[triple differences]]
 - [[bad controls]]

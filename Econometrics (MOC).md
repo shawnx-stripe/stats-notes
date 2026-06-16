@@ -50,13 +50,13 @@ updated: 2025-09-17
 - Moment-based
   - [[Generalized Method of Moments (GMM)|GMM]], [[Two-Stage Least Squares (2SLS)|2SLS]] / [[Two-Stage Least Squares (2SLS)|two-stage least squares (2SLS)]], [[Instrumental Variables (IV)|IV]] → [[relevance]] · [[exclusion restriction]] · [[monotonicity]]
 - Limited dependent variables
-  - [[Generalized Linear Model (GLM)|Logit/Probit]], Tobit (placeholder), [[Generalized Linear Model (GLM)|Poisson/NB]], Zero-inflation (placeholder)
+  - [[Generalized Linear Model (GLM)|Logit/Probit]], Tobit, [[Generalized Linear Model (GLM)|Poisson/NB]], zero-inflation
 - Quantiles and distributional
-  - [[quantile regression|Quantile regression]], CQR (placeholder)
+  - [[quantile regression|Quantile regression]], conformalized quantile regression
 - Nonparametric/Semiparametric
-  - [[kernel regression|Kernel/local polynomial]], [[splines|Series/splines]], Single-index models (placeholder)
+  - [[kernel regression|Kernel/local polynomial]], [[splines|Series/splines]], single-index models
 - Penalized/ML
-  - [[regularization|Lasso/ridge/elastic net]], [[random forests|Random forest/GBM]], Neural nets (placeholder), [[double machine learning]]
+  - [[regularization|Lasso/ridge/elastic net]], [[random forests|Random forest/GBM]], neural nets, [[double machine learning]]
 - Simulation-based
   - [[bootstrap|Bootstrap]], [[randomization inference|Permutation test]], [[Simulated method of moments]]
 
@@ -166,13 +166,13 @@ updated: 2025-09-17
 ## Reading list
 
 - General econometrics
-  - Wooldridge, Greene, Hayashi (placeholders)
+  - Wooldridge, Greene, Hayashi
 - Causal inference
   - [[Angrist and Pischke]] · [[Imbens and Rubin]] · [[Hernán and Robins]] · [[Cunningham (Mixtape)]]
 - Time series
-  - Hamilton, Hyndman & Athanasopoulos (placeholders)
+  - Hamilton, Hyndman & Athanasopoulos
 - Bayesian/structural
-  - Gelman et al., DeJong & Dave, Canova (placeholders)
+  - Gelman et al., DeJong & Dave, Canova
 
 ---
 

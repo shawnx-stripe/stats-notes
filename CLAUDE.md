@@ -71,15 +71,18 @@ obsidian properties file="FILENAME"  # inspect YAML frontmatter
 Always prefer the CLI for link validation — it uses Obsidian's actual resolver
 and is the authoritative source for what's broken vs. resolved.
 
-### Slash commands
-- `/check-links` — scan vault for broken wikilinks (CLI + fallback)
-- `/fix-links` — classify and batch-fix broken links (aliases, stubs, syntax)
-- `/new-note` — create a note with proper naming, aliases, tags, MOC registration
+### Repo audit
 
-### Hooks
-- **PostToolUse (Write|Edit)**: Automatically checks the edited `.md` file for
-  unresolved links after every edit. Uses CLI if available, Python fallback otherwise.
-  Non-blocking (informational only).
+Use the lightweight audit script for checks outside Obsidian's resolver:
+
+```bash
+python3 scripts/audit_vault.py
+```
+
+The script checks frontmatter, summary callouts, `## Related notes`, malformed
+wikilinks, alias collisions, short-note inventory, MOC coverage, and tracked
+ignored files. Slash commands and editor hooks may exist in a personal setup,
+but they are not tracked in this repository.
 
 ### Alias standardization
 Every note MUST have comprehensive aliases to prevent broken links:

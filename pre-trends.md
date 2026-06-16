@@ -80,7 +80,7 @@ $$
 
 ### 4) Alternative designs
 - [[Synthetic Control]] to match the treated unit’s pre-path closely.
-- [[Triple Differences (DDD)|DDD]]/[[triple differences]] to difference out a third dimension.
+- [[Triple Differences (DDD)|DDD]] to difference out a third dimension.
 - For [[staggered adoption]], use cohort-time ATT estimators like [[Callaway–Sant’Anna estimator]] or [[Sun–Abraham estimator]].
 
 ## Minimal code for pre-trend checks
@@ -186,7 +186,6 @@ $$
 - [[entropy balancing]]
 - [[balanced panel]]
 - [[Triple Differences (DDD)|DDD]]
-- [[triple differences]]
 - [[Synthetic Control]]
 - [[seasonality]]
 - [[Anticipatory effects]]

@@ -74,7 +74,7 @@ $$
 - Consider alternative designs:
   - [[Synthetic Control]] to closely match pre-treatment paths.
   - [[Interrupted Time Series (ITS)]] with a comparison series.
-  - Triple differences ([[Triple Differences (DDD)|DDD]]/[[triple differences]]) to difference out an additional confound.
+  - Triple differences ([[Triple Differences (DDD)|DDD]]) to difference out an additional confound.
   - Modern DiD estimators for [[staggered adoption]] (e.g., [[Callaway–Sant’Anna estimator]], [[Sun–Abraham estimator]]).
 
 ## Implications for identification
@@ -150,5 +150,4 @@ $$
 - [[Synthetic Control]]
 - [[Interrupted Time Series (ITS)]]
 - [[Triple Differences (DDD)|DDD]]
-- [[triple differences]]
 - [[composition]]

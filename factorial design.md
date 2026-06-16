@@ -206,7 +206,7 @@ reg Y c.A##c.B##c.C
 - [[Analysis of Covariance (ANCOVA)|ANCOVA]] · [[Controlled Experiments Using Pre-Experiment Data (CUPED)|CUPED]] · [[Controlled Experiments Using Pre-Experiment Covariates (CUPAC)|CUPAC]]
 - [[switchback experiment]] · [[geo experiment]]
 - [[response surface methodology]]
-- Taguchi methods (placeholder)
-- resolution (placeholder) · [[aliasing]]
+- Taguchi methods
+- resolution · [[aliasing]]
 
 ---

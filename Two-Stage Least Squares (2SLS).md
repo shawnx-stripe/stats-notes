@@ -182,24 +182,11 @@ print(res.summary)
 > - Overreliance on over-ID tests to “prove” exclusion; they have low power and test joint validity only.
 
 
-## Cross-links
+## Related notes
 
 - Strategy: [[Instrumental Variables (IV)]], [[Identification Strategies (MOC)]]
 - Assumptions: [[exclusion restriction]], [[relevance]], [[weak instruments]], [[monotonicity]]
 - Estimands: [[Local Average Treatment Effect (LATE)|LATE]], [[Local IV]], [[marginal treatment effect (MTE)]], [[Wald estimator]]
-- Estimation/inference: [[Generalized Method of Moments (GMM)|GMM]], [[Limited Information Maximum Likelihood (LIML)|LIML]], [[k-class estimator]] (to create), [[Anderson–Rubin|Anderson–Rubin test]], [[CLR test]], [[Stock–Yogo]], [[Durbin–Wu–Hausman test]]
+- Estimation/inference: [[Generalized Method of Moments (GMM)|GMM]], [[Limited Information Maximum Likelihood (LIML)|LIML]], [[k-class estimator]], [[post-lasso instruments]], [[Anderson–Rubin|Anderson–Rubin test]], [[CLR test]], [[Stock–Yogo]], [[Durbin–Wu–Hausman test]]
 - Panels/RD: [[fuzzy RDD]], [[Panel Data Methods (MOC)]]
 - Inference: [[clustered standard errors]], [[Conley standard errors]], [[wild cluster bootstrap]]
-
----
-
-## Potential future notes
-
-- [[k-class estimator]]
-- [[Jackknife IV (JIVE)|JIVE]]
-- [[Cragg–Donald statistic]]
-- [[Kleibergen–Paap]] rk Wald F
-- [[Sargan test]]
-- [[Hansen J test]]
-- [[Durbin–Wu–Hausman test]]
-- [[post-lasso instruments]]

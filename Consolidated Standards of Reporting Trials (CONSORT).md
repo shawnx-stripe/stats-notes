@@ -162,7 +162,7 @@ Analysis
 
 ---
 
-## Relation to other pages
+## Related notes
 
 - Design/reporting: [[Experimental Design (MOC)]] · [[AB Testing (MOC)]] · [[pre-registration]] · [[sequential testing]] · [[False Discovery Rate (FDR)|FDR]]
 - Outcomes/precision: [[Overall Evaluation Criterion (OEC)|OEC]] · [[guardrail metric]] · [[Controlled Experiments Using Pre-Experiment Data (CUPED)|CUPED]] · [[Controlled Experiments Using Pre-Experiment Covariates (CUPAC)|CUPAC]] · [[Analysis of Covariance (ANCOVA)|ANCOVA]] · [[power analysis]] · [[Minimum Detectable Effect (MDE)|MDE]]

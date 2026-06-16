@@ -134,7 +134,7 @@ print(res)
 - Announcements vs. implementation: use event time defined by the first economically relevant date; see [[Anticipatory effects]].
 - Alternative designs:
   - [[Synthetic Control]] for a single treated aggregate with a dynamic gap plot.
-  - [[Triple Differences (DDD)|DDD]]/[[triple differences]] when an additional unaffected dimension can difference out confounders.
+  - [[Triple Differences (DDD)|DDD]] when an additional unaffected dimension can difference out confounders.
 - Interference:
   - If [[interference]]/[[No spillovers]] is violated, augment with exposure-based event studies (near vs. far controls; exposure bins).
 
@@ -174,7 +174,6 @@ $$
 - [[treated group]]
 - [[control group]]
 - [[Triple Differences (DDD)|DDD]]
-- [[triple differences]]
 - [[Synthetic Control]]
 - [[interference]]
 - [[No spillovers]]

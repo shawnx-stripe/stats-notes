@@ -244,4 +244,3 @@ with explicit weights $w_g(k)$ reported (e.g., cohort sizes).
 - [[covariates]]
 - [[Synthetic Control]]
 - [[Triple Differences (DDD)|DDD]]
-- [[triple differences]]

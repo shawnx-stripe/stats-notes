@@ -30,13 +30,13 @@ Related starting points:
   - [[Ordinary Least Squares (OLS)|OLS]]: closed-form under exogeneity, homoskedastic iid errors
   - WLS/GLS: known/estimated error covariance; feasible GLS
   - [[Nonlinear Least Squares (NLS)|NLS]]: nonlinear mean function; Gauss–Newton/LM
-  - Robust/quantile (to create): Huber, [[quantile regression]] for heavy tails/outliers
+  - Robust/quantile: [[Huber regression]], [[quantile regression]] for heavy tails/outliers
 
 - Likelihood-based
   - [[Maximum Likelihood Estimation (MLE)|MLE]]: maximize likelihood; score/Hessian; asymptotic normality via Fisher information
   - [[Generalized Linear Model (GLM)|GLM]]: exponential family + link; IRLS algorithm
   - [[Bayesian econometrics]]: priors + likelihood → posterior; computation via [[Markov Chain Monte Carlo (MCMC)|MCMC]] / [[Sequential Monte Carlo (SMC)|SMC]]
-  - Latent variable via EM: mixture models, incomplete data (see “EM algorithm” to create)
+  - Latent variable via [[EM algorithm|EM]]: mixture models, incomplete data
 
 - Moment-based
   - Method of moments; [[Generalized Method of Moments (GMM)|GMM]]: match sample to population moments; optimal weighting; overidentification tests
@@ -102,7 +102,7 @@ Related starting points:
   - Initialization (multi-start for nonconvex), scaling/standardization, constraints/box bounds
   - Diagnostics: gradient norms, KKT conditions, Hessian check; reproducibility (seeds)
 
-Related notes to create: [[EM algorithm]], [[BFGS]], proximal gradient, [[ADMM]], line search, [[trust region]]
+Related notes: [[EM algorithm]], [[BFGS]], [[ADMM]], [[trust region]]
 
 ## Asymptotics, uncertainty, and tests
 
@@ -121,13 +121,13 @@ Links: [[clustered standard errors]], [[Conley standard errors]], [[wild cluster
 ## Model selection and validation
 
 - Information criteria
-  - AIC (K-L), BIC (Schwarz), small-sample corrections; for Bayesian: [[BIC]] proxy, WAIC/DIC (to create)
+  - [[AIC]] (K-L), [[BIC]] (Schwarz), small-sample corrections; for Bayesian: [[BIC]] proxy, WAIC/DIC
 - Out-of-sample validation
   - [[cross-validation]]/OOS splits; time-series CV (rolling); nested CV for tuning
 - Bayesian model comparison
   - [[Bayesian Testing]] via Bayes factors/posterior odds; posterior predictive checks
 - Regularization paths
-  - Penalty tuning via CV; stability selection (to create) for variable selection
+  - Penalty tuning via CV; [[stability selection]] for variable selection
 
 Related notes: [[multiple testing control]], [[False Discovery Rate (FDR)|FDR]]
 
@@ -150,7 +150,7 @@ Links: [[Robust Methods (MOC)]], [[Missing Data and Selection (MOC)]], [[Spillov
 - HAC/Newey–West; long-run variance; frequency-domain options
 - State-space: [[Kalman filter]] (linear-Gaussian), extended/unscented variants; parameter EM
 - Nonlinear/non-Gaussian: [[Sequential Monte Carlo (SMC)|SMC]] (particle filters); [[Hidden Markov Model (HMM)|HMM]] for discrete latent states
-- Forecast evaluation: MSE/MAE; Diebold–Mariano (to create)
+  - Forecast evaluation: MSE/MAE; [[Diebold–Mariano test]]
 
 Links: [[Time Series (MOC)]], [[seasonality]], [[Prophet]]
 

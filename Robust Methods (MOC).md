@@ -80,7 +80,7 @@ Related notes: [[propensity score]], [[entropy balancing]], [[matching]], [[Over
 
 - Weak instruments (IV)
   - Diagnose [[weak instruments]] (first-stage F, strength), ensure [[relevance]]
-  - Prefer robust tests (e.g., Anderson–Rubin/CLR; see “Related notes to create”)
+  - Prefer robust tests such as [[Anderson–Rubin]] and [[CLR test]]
   - Interpret as [[Local Average Treatment Effect (LATE)|LATE]]/local effects; use [[fuzzy RDD]] where applicable
 - Partial identification when assumptions are weak
   - Worst-case bounds: [[Manski bounds]]
@@ -110,7 +110,7 @@ Related: [[Difference-in-Differences (DiD)]], [[event study]], [[two-way fixed e
   - [[randomization inference]] with interference/attrition adjustments
 - Observational confounding sensitivity
   - Placebo outcomes/negative controls; falsification tests
-  - E-value/Oster’s δ (see “Related notes to create”)
+  - [[E-value]] and [[Oster’s delta]]
   - Pattern-mixture/selection models (MNAR; see [[Missing Data and Selection (MOC)]])
 
 Related: [[selection bias]], [[placebo test]], [[Missing Data and Selection (MOC)]]
@@ -121,7 +121,7 @@ Related: [[selection bias]], [[placebo test]], [[Missing Data and Selection (MOC
 - Robust regression and losses (Huber/M-estimation)
 - Winsorization/trimming protocols (pre-registered to avoid p-hacking)
 
-Related notes to create: [[quantile regression]], [[Huber regression]], [[M-estimation]], winsorization
+Related notes: [[quantile regression]], [[Huber regression]], [[M-estimation]]; future note: winsorization
 
 ## Practical workflow for robustness
 

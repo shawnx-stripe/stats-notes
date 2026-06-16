@@ -7,8 +7,6 @@ aliases:
 - regression discontinuity
 - regression discontinuity design
 - sharp RD
-- donut RD
-- donut RDD
 tags:
 - econometrics
 - causal-inference

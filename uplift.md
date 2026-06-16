@@ -1,6 +1,6 @@
 ---
 title: uplift
-aliases: [uplift modeling, incremental response, incremental lift, CATE modeling, heterogeneous treatment effects]
+aliases: [uplift modeling, incremental response, incremental lift, CATE modeling]
 tags: [uplift, causal-inference, treatment-effect-heterogeneity, personalization, policy-learning, evaluation, qini, auuc]
 updated: 2025-09-17
 ---
