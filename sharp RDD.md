@@ -1,8 +1,8 @@
 ---
 title: Sharp RDD
 aliases: [sharp RDD, Sharp RDD, sharp regression discontinuity]
-tags: [causal-inference]
-updated: 2026-03-05
+tags: [causal-inference, rdd, identification, nonparametric]
+updated: 2026-06-17
 ---
 
 # Sharp RDD
@@ -33,15 +33,41 @@ This is the local ATE at the cutoff. Interpretation: effect for units with $R_i 
 > [!check] Contrast with fuzzy RDD
 > In [[fuzzy RDD]], treatment probability changes discontinuously at $c$ but not from 0 to 1. Sharp RDD is a special case where compliance is perfect. Fuzzy RDD requires IV-like assumptions and estimates LATE for compliers at the cutoff.
 
+## Key assumptions
+
+- Continuity of conditional expectations at the cutoff (no other discontinuity).
+- No manipulation of the running variable near $c$ (testable via [[density test]]).
+- No compound treatments or policy bundles at the same cutoff.
+
 ## Minimal code
+
+> [!example] R: rdrobust
 
 ```r
 library(rdrobust)
 out <- rdrobust(y = outcome, x = running_var, c = 0)
 summary(out)
+rdplot(y = outcome, x = running_var, c = 0)
+```
+
+> [!example] Python: rdrobust
+
+```python
+from rdrobust import rdrobust, rdplot
+
+# Sharp RDD with MSE-optimal bandwidth
+result = rdrobust(y=df['outcome'], x=df['running_var'], c=0)
+print(result)
+
+# RD plot
+rdplot(y=df['outcome'], x=df['running_var'], c=0)
 ```
 
 ## Related notes
 
 - [[Regression Discontinuity Design (RDD)]]
 - [[fuzzy RDD]]
+- [[rdrobust]]
+- [[density test]]
+- [[bandwidth selection]]
+- [[local polynomial regression]]

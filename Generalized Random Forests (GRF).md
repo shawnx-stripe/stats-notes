@@ -86,7 +86,7 @@ See also: [[causal forests]] for the CATE specialization.
 
 ---
 
-## Code examples (R)
+## Code examples
 
 > [!example] CATE with causal_forest
 
@@ -145,6 +145,53 @@ y_hat <- predict(rf)$predictions
 # Average partial effect of a feature (global derivative)
 ape <- average_partial_effect(rf, X, target = 1) # 1 = first feature
 ape$estimate; ape$std.err
+```
+
+> [!example] Python: CATE with econml CausalForestDML
+
+```python
+import numpy as np
+from econml.dml import CausalForestDML
+from sklearn.ensemble import GradientBoostingRegressor, GradientBoostingClassifier
+
+X = df[['X1', 'X2', 'X3']].values
+Y = df['Y'].values
+W = df['D'].values  # 0/1 treatment
+
+# CausalForestDML: doubly-robust causal forest with cross-fitting
+cf = CausalForestDML(
+    model_y=GradientBoostingRegressor(n_estimators=100),
+    model_t=GradientBoostingClassifier(n_estimators=100),
+    n_estimators=2000,
+    min_samples_leaf=5,
+    random_state=42
+)
+cf.fit(Y, W, X=X)
+
+# Pointwise CATE predictions with confidence intervals
+tau_hat = cf.effect(X)
+ci = cf.effect_interval(X, alpha=0.05)  # (lower, upper)
+
+# ATE with inference
+ate = cf.ate(X)
+ate_inf = cf.ate_inference(X)
+print(f"ATE: {ate_inf.point_estimate:.4f} [{ate_inf.conf_int()[0]:.4f}, {ate_inf.conf_int()[1]:.4f}]")
+
+# Feature importance (via SHAP)
+shap_values = cf.shap_values(X)
+```
+
+> [!example] Python: causal forest via grf (R bridge with rpy2)
+
+```python
+# Alternative: use R's grf directly via rpy2
+from rpy2.robjects import r, pandas2ri
+from rpy2.robjects.packages import importr
+pandas2ri.activate()
+
+grf = importr('grf')
+cf = grf.causal_forest(X, Y, W, num_trees=2000, honesty=True)
+pred = grf.predict_causal_forest(cf, estimate_variance=True)
 ```
 
 ---

@@ -128,6 +128,31 @@ dyn_rc <- aggte(att_rc, type = "dynamic")
 summary(dyn_rc)
 ```
 
+> [!example] Python: differences package
+
+```python
+from differences import ATTgt
+import pandas as pd
+
+# df: columns id, time, Y, G (first treatment period; np.inf for never-treated)
+att = ATTgt(
+    data=df,
+    cohort_name='G',       # first treatment time
+    period_name='time',
+    outcome_name='Y',
+    unit_name='id',
+    control_group='notyet',  # or 'nevertreated'
+    method='dr'              # doubly robust
+)
+att.fit()
+
+# Results
+print(att.summary())           # ATT(g,t) grid
+print(att.aggregate('simple')) # overall ATT
+print(att.aggregate('event'))  # dynamic/event-time
+print(att.aggregate('group'))  # by cohort
+```
+
 > [!example] Stata: csdid
 
 ```stata

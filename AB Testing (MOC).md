@@ -2,7 +2,7 @@
 title: AB Testing (MOC)
 aliases: [A/B Testing (MOC), A/B Testing, AB Testing, A-B Testing, Online Experiments, Controlled Experiments (online)]
 tags: [moc, experimentation, ab-testing, online, product, causal-inference, sequential, variance-reduction]
-updated: 2025-09-17
+updated: 2026-06-17
 ---
 
 # AB Testing (MOC)
@@ -55,6 +55,7 @@ See: [[leakage]] · [[triggered analysis]] · [[interference]] · [[No spillover
   - Ratio metrics (delta method/Fieller), winsorization (with care), transformations (log)
 - Variance reduction
   - [[Controlled Experiments Using Pre-Experiment Data (CUPED)|CUPED]] / [[Controlled Experiments Using Pre-Experiment Covariates (CUPAC)|CUPAC]] (pre-exposure covariates/baselines)
+  - [[ML-assisted variance reduction]] (GBM/NN on rich pre-treatment features)
   - Stratification by pre-period performance; re-randomization (with pre-spec)
   - User-level covariate adjustment (ANCOVA)
 
@@ -178,6 +179,9 @@ Links: [[power analysis]] · [[Minimum Detectable Effect (MDE)|MDE]]
   - Bandit algorithms (epsilon-greedy/Thompson); beware exploration bias and inference
 - Marketplace/network experiments
   - Two-sided markets; shadow prices, pacing; interference-aware analysis
+- [[interleaving experiments]]
+  - Merge ranked results from competing models in one list; within-user comparison for ranking/search
+  - Up to 50–100× sensitivity gain; use as screening before full A/B
 - Holdouts and long-term tests
   - Persistent holdouts for model personalization; cohort tracking
 
@@ -199,8 +203,8 @@ Links: [[power analysis]] · [[Minimum Detectable Effect (MDE)|MDE]]
 - [[Callaway–Sant’Anna estimator]] · [[clustered standard errors]] · [[Controlled Experiments Using Pre-Experiment Data (CUPED)|CUPED]] · [[Controlled Experiments Using Pre-Experiment Covariates (CUPAC)|CUPAC]]  
 - [[Difference-in-Differences (DiD)]] · [[event study]] · [[exposure logging]] · [[False Discovery Rate (FDR)|FDR]] · [[few-cluster corrections]]  
 - [[geo experiment]] · [[guardrail metric]]  
-- [[interference]] · [[Intent-to-Treat (ITT)]] · [[Inverse Probability of Censoring Weighting (IPCW)|IPCW]]  
-- [[leakage]] · [[Lee bounds]] · [[Minimum Detectable Effect (MDE)|MDE]] · [[Manski bounds]]  
+- [[interleaving experiments]] · [[interference]] · [[Intent-to-Treat (ITT)]] · [[Inverse Probability of Censoring Weighting (IPCW)|IPCW]]  
+- [[leakage]] · [[Lee bounds]] · [[Minimum Detectable Effect (MDE)|MDE]] · [[ML-assisted variance reduction]] · [[Manski bounds]]  
 - [[Overall Evaluation Criterion (OEC)|OEC]] · [[policy learning]] · [[pre-registration]] · [[Prophet]]  
 - [[Regression Discontinuity Design (RDD)]] · [[relevance]]  
 - [[seasonality]] · [[sequential testing]] · [[Sample Ratio Mismatch (SRM)|SRM]] · [[staggered adoption]] · [[stratification]] · [[switchback experiment]] · [[Synthetic Control]] · [[Stable Unit Treatment Value Assumption (SUTVA)|SUTVA]]  

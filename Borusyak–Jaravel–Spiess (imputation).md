@@ -68,6 +68,24 @@ res <- did_imputation(
 summary(res)
 ```
 
+> [!example] Python: pyfixest
+
+```python
+import pyfixest as pf
+
+# df: panel with columns id, time, Y, D (treatment indicator), first_treat
+# Imputation estimator via pyfixest
+fit = pf.did.event_study(
+    data=df,
+    yname='Y',
+    idname='id',
+    tname='time',
+    gname='first_treat',
+    estimator='did2s'  # Gardner/imputation approach
+)
+pf.did.event_study_plot(fit)
+```
+
 > [!example] Stata
 
 ```stata

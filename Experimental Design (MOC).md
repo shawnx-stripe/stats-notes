@@ -157,8 +157,10 @@ Links: [[power analysis]] · [[Minimum Detectable Effect (MDE)|MDE]]
 
 - Covariate adjustment
   - Baseline Y and key X in ANCOVA; pre-treatment means for [[Controlled Experiments Using Pre-Experiment Data (CUPED)|CUPED]]
+  - [[ML-assisted variance reduction]]: flexible ML predictors on rich pre-treatment features (GBM/NN)
 - Design-side
   - Blocking/stratification; re-randomization within tolerance
+  - [[interleaving experiments]] for ranking/search (within-user comparison; screening before A/B)
 - Analysis-side
   - [[entropy balancing]] or regression weighting if random imbalances arise (use cautiously; preserve ITT)
 

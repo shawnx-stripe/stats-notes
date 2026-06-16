@@ -70,6 +70,37 @@ res <- did2s(
 summary(res)
 ```
 
+
+> [!example] Python: manual two-stage implementation
+
+```python
+import numpy as np
+import pandas as pd
+import statsmodels.api as sm
+from linearmodels.panel import PanelOLS
+
+# df: panel with columns id, time, Y, D (post-treatment indicator), first_treat
+# Stage 1: estimate unit + time FE on untreated observations only
+untreated = df[df['D'] == 0].copy()
+untreated = untreated.set_index(['id', 'time'])
+stage1 = PanelOLS(untreated['Y'], sm.add_constant(pd.DataFrame(index=untreated.index)),
+                  entity_effects=True, time_effects=True).fit()
+
+# Predict counterfactual for all observations
+df_panel = df.set_index(['id', 'time'])
+y_hat = stage1.predict(effects=True)  # includes FE predictions
+
+# Stage 2: regress (Y - Y_hat) on treatment indicator
+df['Y_resid'] = df['Y'] - y_hat.values  # align indices carefully
+treated_obs = df[df['D'] == 1]
+tau_hat = treated_obs['Y_resid'].mean()
+
+# Cluster-robust SE (use bootstrap or sandwich on full second stage)
+X2 = sm.add_constant(df['D'])
+res2 = sm.OLS(df['Y_resid'], X2).fit(cov_type='cluster', cov_kwds={'groups': df['id']})
+print(res2.summary())
+```
+
 > [!example] Stata
 
 ```stata
